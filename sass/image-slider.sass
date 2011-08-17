@@ -17,80 +17,82 @@
 	.center
 		@extend .center-container
 		padding: $v-gap 0 ($v-gap/2)
-		h1
+		.captionContainer
 			@extend .box
-			font-family: "EmbedFont-1"
-			width: $inside-width
-			margin: 15px 0 0 0
-			padding: 0 ($h-gap) 0.2em 300px
-			color: $image-slider-title
-			//background: $primary
-			//opacity: 0.85
-			font-size: 30px
-			font-weight: 100
-			text-align: right
-			line-height: 1em
-			word-spacing: .1em
-			letter-spacing: .05em
-			//border-bottom: 4px solid #fff
-			&:hover
-				//opacity: 0.75
-		h3
-			@extend .font-base
-			//@extend .corner-right
-			@extend .box
-			position: relative
-			top: 0px
-			width: $inside-width
-			margin: 0 0 6px 0
-			padding: 0.4em ($h-gap) 0.4em 450px
-			color: $gray-med
-			//background: $secondary
-			//opacity: 0.85
-			font-size: 14px
-			font-weight: 200
-			text-align: right
-			line-height: 1.1em
-			//word-spacing: .05em
-			//letter-spacing: .025em
-			//border: 1px solid #000
-			&:hover
-				//opacity: 0.75
-		p.link
-			@extend .bg-gradient-primary
-			@extend .box
-			@extend .corner-all
 			position: absolute
-			bottom: ($v-gap/2)
-			left: $h-gap
-			color: $image-slider-link	
-			border: 1px solid $primary
-			&:hover
-				@extend .bg-gradient-reverse
-			a
-				font-family: "EmbedFont-1"
-				display: block
-				padding: 9px 2em 8px 2em
-				color: inherit
-				font-size: 11px
+			width: 300px
+			height: 300px
+			top: 0
+			left: $h-gap *2
+			margin: 0
+			padding: $corner-radius*2
+			background: url(/images/nav_bg.png) repeat
+			h1
+				@extend .box
+				@extend .font-trajan
+				margin: 50px 0 $corner-radius 0
+				padding: 0
+				color: $image-slider-title
+				font-size: 30px
+				font-weight: 100
+				text-align: left
+				text-shadow: 2px 2px 1px #000
+				line-height: 1em
+
+			h3
+				@extend .font-base
+				//@extend .corner-right
+				@extend .box
+				position: relative
+				top: 0px
+				margin: 15px 0 6px 0
+				padding: 0
+				color: $image-slider-text
+				font-size: 14px
 				font-weight: 200
-				text-decoration: none
-				text-transform: uppercase
-			
+				text-align: left
+				text-shadow: 1px 1px 1px #000
+				line-height: 1.1em
+			p.link
+				@extend .bg-gradient-primary
+				@extend .box
+				@extend .corner-all
+				position: absolute
+				bottom: ($v-gap/2)
+				left: $h-gap
+				color: $image-slider-link	
+				border: 1px solid $primary
+				&:hover
+					@extend .bg-gradient-reverse
+				a
+					font-family: "EmbedFont-1"
+					display: block
+					padding: 9px 2em 8px 2em
+					color: inherit
+					font-size: 11px
+					font-weight: 200
+					text-decoration: none
+					text-transform: uppercase
+
+#slider-bottom
+	width: $inside-width
+	height: 25px
+	margin: 0 auto
+	background: url(/images/stripe.jpg) repeat
 	
 	
 //NIVO SLIDER
 // The Nivo Slider styles //
 .nivoSlider
 	@extend .box
-	@extend .corner-all
+	@extend .corner-top
 	position: relative
 	width: $inside-width
 	height: $slider-height
 
 .nivoSlider img 
 	@extend .box
-	@extend .corner-bottom
+	@extend .corner-top
 	position: absolute
 	top: 0px
 	left: 0px
@@ -151,7 +153,7 @@
 	
 .nivo-directionNav a 
 	position: absolute
-	top: 45%
+	top: 85%
 	z-index: 9
 	cursor: pointer
 	display: block
@@ -180,19 +182,19 @@ a.nivo-nextNav
 
 #slider-wrapper 
 	@extend .box
-	@extend .corner-all
+	@extend .corner-top
 	font-family: "EmbedFont-1"
 	position: relative
 	width: $inside-width
 	height: $slider-height
 	margin: 0 auto
 	overflow: hidden
-	border: 1px solid $image-slider-border	
+	//border: 1px solid $image-slider-border	
 	background: $image-slider-bg
 
 #slider
 	@extend .box
-	@extend .corner-all
+	@extend .corner-top
 	position: relative
 	width: $inside-width
 	height: $slider-height

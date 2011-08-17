@@ -13,41 +13,41 @@
 		@extend .center-container
 		@extend .box
 		@extend .clearfix
-		font-family: "EmbedFont-1"
+		@extend .font-base
 		margin: 0 auto
 		padding: ($v-gap / 2) 0 $v-gap
 		.content
 			@extent .box
 			@extend .bg-gradient-gray-light
-			@extend .corner-all
 			@extend .clearfix
 			width: $inside-width
 			margin: 0 auto
 			padding: 0
 			height: 100px
-			.column
+			.row
 				@extend .box
 				position: relative
-				+float-left
-				width: 150px
-				margin: 10px 0 24px 24px
-				padding: 0 15px 15px 0
+				width: $inside-width
+				margin: 3px auto
+				padding: 0
 				background: transparent
-				border-right: 1px solid $line-color
+				text-align: center
 				&:last-child
 					border-right: none
-				h4
-					font-family: "EmbedFont-1"
+				p
+					@extend .font-base
 					position: relative
 					margin: 0 0 .5em 0
 					color: $footer-text
 					font-size: 10px
-					font-weight: 400
+					font-weight: 200
 					word-spacing: .1em
 					letter-spacing: .05em
+				p.logo-sm
+					margin-bottom: -6px
 				a
 					@extend .font-base
-					display: block
+					display: inline
 					margin: 0 0 .3em 0
 					color: $footer-link
 					font-size: 11px
@@ -55,3 +55,8 @@
 					text-decoration: none
 					&:hover
 						color: $footer-link-hover
+					img.icon
+						width: 15px
+						height: 15px
+						margin: -2px 1px 0 7px
+						vertical-align: middle

@@ -3,31 +3,31 @@
 @import compass/css3
 
 // COLOR DEFINITIONS
-$primary: #003461
+$primary: #603913
 $primary-light: lighten(adjust-hue($primary, 0%), +20)
 //$primary-light: #0a65b4
 $primary-dark: darken($primary, +5)
-$secondary: #d8a41c
-//$secondary-light: lighten(adjust-hue($secondary, 0%), +10)
-$secondary-light: #ebd716
+$secondary: #8c6545
+$secondary-light: lighten(adjust-hue($secondary, 0%), +10)
+//$secondary-light: #
 $secondary-dark: darken($secondary, +5)
-$accent: #900
+$accent: #c6ae9b
 $apple-highlight:	#b4d5ff
 
 $line-color: #ddd
 
 $gray-dark: #333
-$gray-med: #666
-$gray-light: #efefef
+$gray-med: $secondary
+$gray-light: #fff
 
 
 // COLOR APPLICATION
-$html-bg:									#efefef
-$body-bg:									$html-bg
-$center-container-bg:			#fff
+$html-bg:									#fff
+$body-bg:									transparent
+$center-container-bg:			transparent
 
 $text-dark:								#000
-$text-light:							$gray-med
+$text-light:							$gray-light
 $text-highlight:					$apple-highlight
 
 $header-title:						#fff
@@ -36,9 +36,9 @@ $header-link:							$secondary
 $header-link-hover:				#000
 $header-border:						$gray-med
 
-$nav-text:								#aaa
-$nav-text-hover:					#fff
-$nav-lines:								$primary-dark
+$nav-text:								$primary
+$nav-text-hover:					$secondary
+$nav-lines:								$secondary
 $nav-bg:									transparent
 $nav-dropdown-text:				$gray-med
 $nav-dropdown-hover:			#fff
@@ -48,23 +48,23 @@ $nav-dropdown-border:			$gray-dark
 $nav-dropdown-accent:			$secondary
 
 $image-slider-bg:					$gray-light
-$image-slider-title:			$primary-light
-$image-slider-text: 			$gray-dark
+$image-slider-title:			$text-light
+$image-slider-text: 			$accent
 $image-slider-link:				#fff
 $image-slider-link-hover:	#fff
 $image-slider-border:			$line-color
 
-$section-title:						$primary-light
-$section-text:						$text-light
-$section-lines:						$gray-light
-$section-border:					$secondary
+$section-title:						$secondary
+$section-text:						$gray-med
+$section-lines:						$accent
+$section-border:					$primary-light
 
-$option-title:						$primary-light
+$option-title:						$primary
 $option-title-bg:					transparent
-$option-text:							$gray-med
+$option-text:							$text-light
 $option-link:							$secondary
 $option-link-hover:				$secondary
-$option-bg:								$gray-light
+$option-bg:								$accent
 $option-border:						$line-color
 
 $footer-title:						$gray-med
@@ -75,9 +75,9 @@ $footer-border:						$line-color
 
 $m3c-bg:									$secondary
 $m3c-border:							$secondary-dark
-$m3c-text:								$gray-light
-$m3c-link:								$primary
-$m3c-link-hover:					#fff
+$m3c-text:								$primary-dark
+$m3c-link:								$accent
+$m3c-link-hover:					$gray-light
 $m3c-link-border:					$line-color
 
 $opacity:									0.75

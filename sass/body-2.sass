@@ -17,7 +17,7 @@
 	//background: $image-slider-bg
 	.center
 		@extend .center-container
-		padding: $v-gap 0 ($v-gap/2)
+		padding: $v-gap 0 0
 		.content
 			@extent .box
 			width: $inside-width
@@ -25,12 +25,20 @@
 			padding: 0
 			img.banner
 				@extend .box
-				@extend .corner-all
+				@extend .corner-top
 				width: $inside-width
 				height: $banner-height
 				margin: 0
 				padding: 0
-				
+#banner-bottom
+	position: relative
+	top: -2px
+	width: $inside-width
+	height: 25px
+	margin: 0 auto
+	background: url(/images/stripe.jpg) repeat
+			
+
 
 
 .body
@@ -38,11 +46,11 @@
 	@extend .clearfix
 	position: relative
 	width: 100%
-	margin: 0 auto
+	margin: ($v-gap) auto
 	.center
 		@extend .center-container
 		@extend .clearfix
-		padding: ($v-gap/2) 0
+		padding: 0
 		.content
 			@extent .box
 			width: $inside-width
@@ -72,7 +80,7 @@
 	h1
 		@extend .box
 		@extend .corner-top
-		font-family: "EmbedFont-1"
+		@extend .font-trajan
 		position: relative
 		color: $option-title
 		background: $option-title-bg
@@ -100,7 +108,7 @@
 
 .link
 	@extend .clearfix
-	@extend .font-trebuchet
+	@extend .font-base
 	@extend .box
 	position: relative
 	width: ($option-width - ($h-gap *2))
@@ -147,11 +155,11 @@
 		width: ($option-width - ($h-gap *2))
 		margin: 0 auto ($v-gap / 2)
 		padding: 0
-		color: $section-text
+		color: $option-text
 		font-size: 12px
 		font-weight: 200
 		text-align: justify
-		line-height: 1.7em
+		line-height: 1.2em
 		&:last-child
 			margin-bottom: ($v-gap / 2)
 
@@ -203,44 +211,40 @@
 			@extend .clearfix
 			position: relative
 			padding: 0 0 ($v-gap) 0
-			border-bottom: 1px dotted $section-border
-			&:last-child
-				padding-bottom: 0
-				border-bottom: none
+			background: #fff
 			img
 				@extend .box
 				@extend .corner-all
 				@extend .bg-gradient-primary
-				+float-left
-				clear: left
+				+float-right
+				clear: none
 				width: $content-img-w
 				height: $content-img-h
-				margin: 0 ($h-gap / 2) ($v-gap / 2) 0
+				margin: 0 0 ($v-gap / 2) ($h-gap / 2)
 				z-index: 100
 			h1
-				font-family: "EmbedFont-1"
+				@extend .font-trajan
 				@extend .box
 				width: ($content-width - ($content-img-w + ($h-gap / 2)))
-				margin: $corner-radius 0 ($v-gap/3) ($content-img-w + ($h-gap / 2))
-				padding: 0 3em 0.5em $corner-radius
+				margin: $corner-radius ($content-img-w + ($h-gap / 2)) ($v-gap/2) 0
+				padding: 0 0 0.2em $corner-radius
 				color: $section-title !important
-				font-size: 18px
-				font-weight: 100
-				text-transform: uppercase
-				word-spacing: .1em
-				letter-spacing: .05em
+				font-size: 30px
+				font-weight: bold
+				text-align: left
+				letter-spacing: -0.05em
 				border-bottom: 1px solid $section-lines
 			p
-				@extend .font-trebuchet
+				@extend .font-base
 				@extend .box
 				width: ($content-width)
 				margin: $corner-radius 0 ($v-gap/3) 0
 				padding: 0 0 0 $corner-radius
 				color: $section-text
-				font-size: 12px
+				font-size: 14px
 				font-weight: 200
 				text-align: justify
-				line-height: 1.7em
+				line-height: 1.4em
 				&:last-child
 					margin-bottom: 0
 				a

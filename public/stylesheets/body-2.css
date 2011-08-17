@@ -6,7 +6,7 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.font-times {
+.font-times, .font-base, .subnav h3, .text h3, .button h3, .form h3, .link, .text p, .main .content .section p, .main .content .main p {
   font-family: times, "Times New Roman", Georgia, sans-serif;
 }
 
@@ -14,15 +14,19 @@
   font-family: Georgia, times, "Times New Roman", sans-serif;
 }
 
-.font-trebuchet, .font-base, .subnav h3, .text h3, .button h3, .form h3, .text p, .link, .main .content .section p, .main .content .main p {
+.font-trebuchet {
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
+}
+
+.font-trajan, .subnav h1, .text h1, .button h1, .form h1, .main .content .section h1, .main .content .main h1 {
+  font-family: "Trajan Pro", "Trajan", "Georgia", "Times New Roman", times, serif;
 }
 
 .bg-gradient-primary, .button p.link, .main .content .section img, .main .content .main img {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#006bc7), to(#003461));
+  background: -webkit-gradient(linear, left top, left bottom, from(#b56c24), to(#603913));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #006bc7, #003461);
+  background: -moz-linear-gradient(top, #b56c24, #603913);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$primary-light, endColorstr=$primary);
   /* For Internet Explorer 8 */
@@ -31,9 +35,9 @@
 
 .bg-gradient-reverse, .button p.link:hover {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#003461), to(#006bc7));
+  background: -webkit-gradient(linear, left top, left bottom, from(#603913), to(#b56c24));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #003461, #006bc7);
+  background: -moz-linear-gradient(top, #603913, #b56c24);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$primary, endColorstr=$primary-light);
   /* For Internet Explorer 8 */
@@ -42,9 +46,9 @@
 
 .bg-gradient-secondary {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#ebd716), to(#d8a41c));
+  background: -webkit-gradient(linear, left top, left bottom, from(#ac7e58), to(#8c6545));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #ebd716, #d8a41c);
+  background: -moz-linear-gradient(top, #ac7e58, #8c6545);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$secondary-light, endColorstr=$secondary);
   /* For Internet Explorer 8 */
@@ -87,7 +91,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   border-bottom-right-radius: 6px;
 }
 
-.corner-top, .subnav h1, .text h1, .button h1, .form h1, .subnav h3, .text h3, .button h3, .form h3 {
+.corner-top, .banner .center .content img.banner, .subnav h1, .text h1, .button h1, .form h1, .subnav h3, .text h3, .button h3, .form h3 {
   -moz-border-radius-topleft: 6px;
   -khtml-border-radius-topleft: 6px;
   -webkit-border-top-left-radius: 6px;
@@ -131,7 +135,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   border-bottom-left-radius: 6px;
 }
 
-.corner-all, .banner .center .content img.banner, .link h5, .button p.link, .main .content .section img, .main .content .main img, .container-setup, .subnav, .text, .button, .form {
+.corner-all, .link h5, .button p.link, .main .content .section img, .main .content .main img, .container-setup, .subnav, .text, .button, .form {
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
   -o-border-radius: 6px;
@@ -167,7 +171,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   height: 100%;
   margin: 0 auto;
   padding: 0;
-  background: white;
+  background: transparent;
 }
 
 .box, .center-container, .banner .center, .body .center, .banner, .banner .center .content img.banner, .body, .sidebar, .subnav h1, .text h1, .button h1, .form h1, .subnav h3, .text h3, .button h3, .form h3, .link, .link p, .text p, .button p.link, .main, .main .content, .main .content .section, .main .content .main, .main .content .section img, .main .content .main img, .main .content .section h1, .main .content .main h1, .main .content .section p, .main .content .main p, .container-setup, .subnav, .text, .button, .form {
@@ -209,7 +213,7 @@ b {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.font-times {
+.font-times, .font-base, .subnav h3, .text h3, .button h3, .form h3, .link, .text p, .main .content .section p, .main .content .main p {
   font-family: times, "Times New Roman", Georgia, sans-serif;
 }
 
@@ -217,15 +221,19 @@ b {
   font-family: Georgia, times, "Times New Roman", sans-serif;
 }
 
-.font-trebuchet, .font-base, .subnav h3, .text h3, .button h3, .form h3, .text p, .link, .main .content .section p, .main .content .main p {
+.font-trebuchet {
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
+}
+
+.font-trajan, .subnav h1, .text h1, .button h1, .form h1, .main .content .section h1, .main .content .main h1 {
+  font-family: "Trajan Pro", "Trajan", "Georgia", "Times New Roman", times, serif;
 }
 
 .bg-gradient-primary, .button p.link, .main .content .section img, .main .content .main img {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#006bc7), to(#003461));
+  background: -webkit-gradient(linear, left top, left bottom, from(#b56c24), to(#603913));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #006bc7, #003461);
+  background: -moz-linear-gradient(top, #b56c24, #603913);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$primary-light, endColorstr=$primary);
   /* For Internet Explorer 8 */
@@ -234,9 +242,9 @@ b {
 
 .bg-gradient-reverse, .button p.link:hover {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#003461), to(#006bc7));
+  background: -webkit-gradient(linear, left top, left bottom, from(#603913), to(#b56c24));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #003461, #006bc7);
+  background: -moz-linear-gradient(top, #603913, #b56c24);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$primary, endColorstr=$primary-light);
   /* For Internet Explorer 8 */
@@ -245,9 +253,9 @@ b {
 
 .bg-gradient-secondary {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#ebd716), to(#d8a41c));
+  background: -webkit-gradient(linear, left top, left bottom, from(#ac7e58), to(#8c6545));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #ebd716, #d8a41c);
+  background: -moz-linear-gradient(top, #ac7e58, #8c6545);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$secondary-light, endColorstr=$secondary);
   /* For Internet Explorer 8 */
@@ -290,7 +298,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   border-bottom-right-radius: 6px;
 }
 
-.corner-top, .subnav h1, .text h1, .button h1, .form h1, .subnav h3, .text h3, .button h3, .form h3 {
+.corner-top, .banner .center .content img.banner, .subnav h1, .text h1, .button h1, .form h1, .subnav h3, .text h3, .button h3, .form h3 {
   -moz-border-radius-topleft: 6px;
   -khtml-border-radius-topleft: 6px;
   -webkit-border-top-left-radius: 6px;
@@ -334,7 +342,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   border-bottom-left-radius: 6px;
 }
 
-.corner-all, .banner .center .content img.banner, .link h5, .button p.link, .main .content .section img, .main .content .main img, .container-setup, .subnav, .text, .button, .form {
+.corner-all, .link h5, .button p.link, .main .content .section img, .main .content .main img, .container-setup, .subnav, .text, .button, .form {
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
   -o-border-radius: 6px;
@@ -353,7 +361,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   margin: 0 auto;
 }
 .banner .center {
-  padding: 30px 0 15px;
+  padding: 30px 0 0;
 }
 .banner .center .content {
 @extent .box;
@@ -363,18 +371,27 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 }
 .banner .center .content img.banner {
   width: 900px;
-  height: 205px;
+  height: 200px;
   margin: 0;
   padding: 0;
+}
+
+#banner-bottom {
+  position: relative;
+  top: -2px;
+  width: 900px;
+  height: 25px;
+  margin: 0 auto;
+  background: url(/images/stripe.jpg) repeat;
 }
 
 .body {
   position: relative;
   width: 100%;
-  margin: 0 auto;
+  margin: 30px auto;
 }
 .body .center {
-  padding: 15px 0;
+  padding: 0;
 }
 .body .center .content {
 @extent .box;
@@ -402,9 +419,8 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 }
 
 .subnav h1, .text h1, .button h1, .form h1 {
-  font-family: "EmbedFont-1";
   position: relative;
-  color: #006bc7;
+  color: #603913;
   background: transparent;
   width: 220px;
   margin: 0 auto;
@@ -448,7 +464,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   top: 5px;
   width: 7px;
   height: 7px;
-  background: #d8a41c;
+  background: #8c6545;
   font-size: 11px;
   text-align: center;
 }
@@ -464,10 +480,10 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 }
 .link p a {
   font-size: 12px;
-  color: #d8a41c;
+  color: #8c6545;
 }
 .link p a:hover {
-  color: #d8a41c;
+  color: #8c6545;
   text-decoration: none;
 }
 
@@ -475,11 +491,11 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   width: 220px;
   margin: 0 auto 15px;
   padding: 0;
-  color: #666666;
+  color: white;
   font-size: 12px;
   font-weight: 200;
   text-align: justify;
-  line-height: 1.7em;
+  line-height: 1.2em;
 }
 .text p:last-child {
   margin-bottom: 15px;
@@ -492,7 +508,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   padding: 0;
   color: white;
   text-align: center;
-  border: 1px solid #003461;
+  border: 1px solid #603913;
 }
 .button p.link a {
   display: block;
@@ -523,53 +539,47 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 .main .content .section, .main .content .main {
   position: relative;
   padding: 0 0 30px 0;
-  border-bottom: 1px dotted #d8a41c;
-}
-.main .content .section:last-child, .main .content .main:last-child {
-  padding-bottom: 0;
-  border-bottom: none;
+  background: white;
 }
 .main .content .section img, .main .content .main img {
   display: inline;
-  float: left;
-  clear: left;
+  float: right;
+  clear: none;
   width: 200px;
   height: 300px;
-  margin: 0 15px 15px 0;
+  margin: 0 0 15px 15px;
   z-index: 100;
 }
 .main .content .section h1, .main .content .main h1 {
-  font-family: "EmbedFont-1";
   width: 369px;
-  margin: 6px 0 10px 215px;
-  padding: 0 3em 0.5em 6px;
-  color: #006bc7 !important;
-  font-size: 18px;
-  font-weight: 100;
-  text-transform: uppercase;
-  word-spacing: 0.1em;
-  letter-spacing: 0.05em;
-  border-bottom: 1px solid #efefef;
+  margin: 6px 215px 15px 0;
+  padding: 0 0 0.2em 6px;
+  color: #8c6545 !important;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: left;
+  letter-spacing: -0.05em;
+  border-bottom: 1px solid #c6ae9b;
 }
 .main .content .section p, .main .content .main p {
   width: 584px;
   margin: 6px 0 10px 0;
   padding: 0 0 0 6px;
-  color: #666666;
-  font-size: 12px;
+  color: #8c6545;
+  font-size: 14px;
   font-weight: 200;
   text-align: justify;
-  line-height: 1.7em;
+  line-height: 1.4em;
 }
 .main .content .section p:last-child, .main .content .main p:last-child {
   margin-bottom: 0;
 }
 .main .content .section p a, .main .content .main p a {
-  color: #006bc7;
+  color: #b56c24;
   text-decoration: none;
 }
 .main .content .section p a:hover, .main .content .main p a:hover {
-  color: #003461;
+  color: #603913;
 }
 
 .container-setup, .subnav, .text, .button, .form {
@@ -579,7 +589,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   clear: both;
   width: 280px;
   margin: 0 0 30px 0;
-  background: #efefef;
+  background: #c6ae9b;
   border: 1px solid #dddddd;
   z-index: 20;
 }

@@ -1,15 +1,15 @@
-- @sitename = "Site Name"
+- @sitename = "Jerald K. Graber :: Attorney at Law"
 
 // MAIN NAVIGATION
 - @link1 = ["Home", "/home"]
-- @link2 = ["About", "/page2"]
-- @link3 = ["Services", "/page3"]
-- @link4 = ["Gallery", "/gallery"]
-- @link5 = ["Contact", "/page5"]
+- @link2 = ["Profile", "/profile"]
+- @link3 = ["Practice", "/law"]
+- @link4 = ["Board Certified", "/cert"]
+- @link5 = ["Contact", "/contact"]
 
 // FOOTER LINKS
-- @linkA1 = ["link name", "/path"]
-- @linkA2 = ["link name", "/path"]
+- @linkA1 = ["713-224-2323 ", "ssss"]
+- @linkA2 = ["graberlaw@sbcglobal.net", "mailto:graberlaw@sbcglobal.net"]
 - @linkA3 = ["link name", "/path"]
 - @linkA4 = ["link name", "/path"]
 - @linkA5 = ["link name", "/path"]
@@ -207,40 +207,19 @@
 
     .content
       = yield
-    #footer
-      .center
-        .content
-          &nbsp;
-          .column
-            %h4 Group One
-            %a{:href => @linkA1[1]}
-              =@linkA1[0]
-            %a{:href => @linkA2[1]}
-              =@linkA2[0]
-            %a{:href => @linkA3[1]}
-              =@linkA3[0]
-            %a{:href => @linkA4[1]}
-              =@linkA4[0]
-          .column
-            %h4 Group Two
-            %a{:href => @linkB1[1]}
-              =@linkB1[0]
-            %a{:href => @linkB2[1]}
-              =@linkB2[0]
-            %a{:href => @linkB3[1]}
-              =@linkB3[0]
-            %a{:href => @linkB4[1]}
-              =@linkB4[0]
-          .column
-            %h4 Group Three
-            %a{:href => @linkC1[1]}
-              =@linkC1[0]
-            %a{:href => @linkC2[1]}
-              =@linkC2[0]
-            %a{:href => @linkC3[1]}
-              =@linkC3[0]
-            %a{:href => @linkC4[1]}
-              =@linkC4[0]  
+      #footer
+        .center
+          .content
+            &nbsp;
+            .row
+              %p.logo-sm
+                %img{:src => "/images/logo-sm.png", :alt => @sitename+" Logo"}
+            .row
+              %p
+                =@linkA1[0]
+                =" - "
+                %a{:href => @linkA2[1]}
+                  =@linkA2[0]
               
                   
     .m3c-bar
@@ -252,8 +231,4 @@
           Powered by [Media 3 Creative](http://media3creative.com/)
           
           
-          
-          
-          
-          <script type="text/javascript" src="http://use.typekit.com/mig2hwk.js"></script>
-          <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+        

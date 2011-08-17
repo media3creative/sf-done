@@ -6,7 +6,7 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.font-times {
+.font-times, .font-base, .main .content .section p, .main .content .main p {
   font-family: times, "Times New Roman", Georgia, sans-serif;
 }
 
@@ -14,15 +14,19 @@
   font-family: Georgia, times, "Times New Roman", sans-serif;
 }
 
-.font-trebuchet, .font-base, .main .content .section p, .main .content .main p {
+.font-trebuchet {
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
+}
+
+.font-trajan, .main .content .section h1, .main .content .main h1 {
+  font-family: "Trajan Pro", "Trajan", "Georgia", "Times New Roman", times, serif;
 }
 
 .bg-gradient-primary, .main .content .section img, .main .content .main img {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#006bc7), to(#003461));
+  background: -webkit-gradient(linear, left top, left bottom, from(#b56c24), to(#603913));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #006bc7, #003461);
+  background: -moz-linear-gradient(top, #b56c24, #603913);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$primary-light, endColorstr=$primary);
   /* For Internet Explorer 8 */
@@ -31,9 +35,9 @@
 
 .bg-gradient-reverse {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#003461), to(#006bc7));
+  background: -webkit-gradient(linear, left top, left bottom, from(#603913), to(#b56c24));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #003461, #006bc7);
+  background: -moz-linear-gradient(top, #603913, #b56c24);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$primary, endColorstr=$primary-light);
   /* For Internet Explorer 8 */
@@ -42,9 +46,9 @@
 
 .bg-gradient-secondary {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#ebd716), to(#d8a41c));
+  background: -webkit-gradient(linear, left top, left bottom, from(#ac7e58), to(#8c6545));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #ebd716, #d8a41c);
+  background: -moz-linear-gradient(top, #ac7e58, #8c6545);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$secondary-light, endColorstr=$secondary);
   /* For Internet Explorer 8 */
@@ -167,7 +171,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   height: 100%;
   margin: 0 auto;
   padding: 0;
-  background: white;
+  background: transparent;
 }
 
 .box, .center-container, .banner .center, .body .center, .banner, .banner .center .content img.banner, .body, .main, .main .content, .main .content .section, .main .content .main, .main .content .section img, .main .content .main img, .main .content .section h1, .main .content .main h1, .main .content .section p, .main .content .main p, .main .content .section p img, .main .content .main p img, .container-setup {
@@ -209,7 +213,7 @@ b {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.font-times {
+.font-times, .font-base, .main .content .section p, .main .content .main p {
   font-family: times, "Times New Roman", Georgia, sans-serif;
 }
 
@@ -217,15 +221,19 @@ b {
   font-family: Georgia, times, "Times New Roman", sans-serif;
 }
 
-.font-trebuchet, .font-base, .main .content .section p, .main .content .main p {
+.font-trebuchet {
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
+}
+
+.font-trajan, .main .content .section h1, .main .content .main h1 {
+  font-family: "Trajan Pro", "Trajan", "Georgia", "Times New Roman", times, serif;
 }
 
 .bg-gradient-primary, .main .content .section img, .main .content .main img {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#006bc7), to(#003461));
+  background: -webkit-gradient(linear, left top, left bottom, from(#b56c24), to(#603913));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #006bc7, #003461);
+  background: -moz-linear-gradient(top, #b56c24, #603913);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$primary-light, endColorstr=$primary);
   /* For Internet Explorer 8 */
@@ -234,9 +242,9 @@ b {
 
 .bg-gradient-reverse {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#003461), to(#006bc7));
+  background: -webkit-gradient(linear, left top, left bottom, from(#603913), to(#b56c24));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #003461, #006bc7);
+  background: -moz-linear-gradient(top, #603913, #b56c24);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$primary, endColorstr=$primary-light);
   /* For Internet Explorer 8 */
@@ -245,9 +253,9 @@ b {
 
 .bg-gradient-secondary {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#ebd716), to(#d8a41c));
+  background: -webkit-gradient(linear, left top, left bottom, from(#ac7e58), to(#8c6545));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #ebd716, #d8a41c);
+  background: -moz-linear-gradient(top, #ac7e58, #8c6545);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$secondary-light, endColorstr=$secondary);
   /* For Internet Explorer 8 */
@@ -1429,7 +1437,7 @@ div.ppt {
 }
 .banner .center .content img.banner {
   width: 900px;
-  height: 205px;
+  height: 200px;
   margin: 0;
   padding: 0;
 }
@@ -1462,7 +1470,7 @@ div.ppt {
 .main .content .section, .main .content .main {
   position: relative;
   padding: 0 0 30px 0;
-  border-bottom: 1px dotted #d8a41c;
+  border-bottom: 1px dotted #b56c24;
 }
 .main .content .section:last-child, .main .content .main:last-child {
   padding-bottom: 0;
@@ -1475,37 +1483,36 @@ div.ppt {
   z-index: 100;
 }
 .main .content .section h1, .main .content .main h1 {
-  font-family: "EmbedFont-1";
   width: 369px;
   margin: 6px 0 10px 215px;
   padding: 0 3em 0.5em 6px;
-  color: #006bc7 !important;
+  color: #8c6545 !important;
   font-size: 18px;
   font-weight: 100;
   text-transform: uppercase;
   word-spacing: 0.1em;
   letter-spacing: 0.05em;
-  border-bottom: 1px solid #efefef;
+  border-bottom: 1px solid #c6ae9b;
 }
 .main .content .section p, .main .content .main p {
   width: 100%;
   margin: 6px 0 10px 0;
   padding: 0 0 0 6px;
-  color: #666666;
+  color: #8c6545;
   font-size: 12px;
   font-weight: 200;
   text-align: justify;
-  line-height: 1.7em;
+  line-height: 1.2em;
 }
 .main .content .section p:last-child, .main .content .main p:last-child {
   margin-bottom: 0;
 }
 .main .content .section p a, .main .content .main p a {
-  color: #006bc7;
+  color: #b56c24;
   text-decoration: none;
 }
 .main .content .section p a:hover, .main .content .main p a:hover {
-  color: #003461;
+  color: #603913;
 }
 .main .content .section p img, .main .content .main p img {
   position: relative;
@@ -1524,7 +1531,7 @@ div.ppt {
   clear: both;
   width: 280px;
   margin: 0 0 30px 0;
-  background: #efefef;
+  background: #c6ae9b;
   border: 1px solid #dddddd;
   z-index: 20;
 }

@@ -6,7 +6,7 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.font-times {
+.font-times, .font-base {
   font-family: times, "Times New Roman", Georgia, sans-serif;
 }
 
@@ -14,15 +14,19 @@
   font-family: Georgia, times, "Times New Roman", sans-serif;
 }
 
-.font-trebuchet, .font-base {
+.font-trebuchet {
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
 }
 
-.bg-gradient-primary, #header, .center {
+.font-trajan, ul#topnav {
+  font-family: "Trajan Pro", "Trajan", "Georgia", "Times New Roman", times, serif;
+}
+
+.bg-gradient-primary {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#006bc7), to(#003461));
+  background: -webkit-gradient(linear, left top, left bottom, from(#b56c24), to(#603913));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #006bc7, #003461);
+  background: -moz-linear-gradient(top, #b56c24, #603913);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$primary-light, endColorstr=$primary);
   /* For Internet Explorer 8 */
@@ -31,9 +35,9 @@
 
 .bg-gradient-reverse {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#003461), to(#006bc7));
+  background: -webkit-gradient(linear, left top, left bottom, from(#603913), to(#b56c24));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #003461, #006bc7);
+  background: -moz-linear-gradient(top, #603913, #b56c24);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$primary, endColorstr=$primary-light);
   /* For Internet Explorer 8 */
@@ -42,9 +46,9 @@
 
 .bg-gradient-secondary {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#ebd716), to(#d8a41c));
+  background: -webkit-gradient(linear, left top, left bottom, from(#ac7e58), to(#8c6545));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #ebd716, #d8a41c);
+  background: -moz-linear-gradient(top, #ac7e58, #8c6545);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$secondary-light, endColorstr=$secondary);
   /* For Internet Explorer 8 */
@@ -161,23 +165,23 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   clear: both;
 }
 
-.center-container, .center {
+.center-container, #header .center {
   position: relative;
   width: 960px;
   height: 100%;
   margin: 0 auto;
   padding: 0;
-  background: white;
+  background: transparent;
 }
 
-.box, .center-container, .center, #header, .center #logo1, ul#topnav a.topnav, ul#topnav .sub ul li a {
+.box, .center-container, #header .center, #header, #header .center #logo1, ul#topnav a.topnav, ul#topnav .sub ul li a {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-.opaque, .center #logo1 a:hover {
+.opaque, #header .center #logo1 a:hover {
   opacity: 0.75;
   filter: alpha(opacity=75);
 }
@@ -209,7 +213,7 @@ b {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.font-times {
+.font-times, .font-base {
   font-family: times, "Times New Roman", Georgia, sans-serif;
 }
 
@@ -217,15 +221,19 @@ b {
   font-family: Georgia, times, "Times New Roman", sans-serif;
 }
 
-.font-trebuchet, .font-base {
+.font-trebuchet {
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
 }
 
-.bg-gradient-primary, #header, .center {
+.font-trajan, ul#topnav {
+  font-family: "Trajan Pro", "Trajan", "Georgia", "Times New Roman", times, serif;
+}
+
+.bg-gradient-primary {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#006bc7), to(#003461));
+  background: -webkit-gradient(linear, left top, left bottom, from(#b56c24), to(#603913));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #006bc7, #003461);
+  background: -moz-linear-gradient(top, #b56c24, #603913);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$primary-light, endColorstr=$primary);
   /* For Internet Explorer 8 */
@@ -234,9 +242,9 @@ b {
 
 .bg-gradient-reverse {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#003461), to(#006bc7));
+  background: -webkit-gradient(linear, left top, left bottom, from(#603913), to(#b56c24));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #003461, #006bc7);
+  background: -moz-linear-gradient(top, #603913, #b56c24);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$primary, endColorstr=$primary-light);
   /* For Internet Explorer 8 */
@@ -245,9 +253,9 @@ b {
 
 .bg-gradient-secondary {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#ebd716), to(#d8a41c));
+  background: -webkit-gradient(linear, left top, left bottom, from(#ac7e58), to(#8c6545));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #ebd716, #d8a41c);
+  background: -moz-linear-gradient(top, #ac7e58, #8c6545);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$secondary-light, endColorstr=$secondary);
   /* For Internet Explorer 8 */
@@ -352,22 +360,21 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   height: 80px;
   margin: 0;
   padding: 0;
-  border-bottom: 2px solid #666666;
+  border-top: 4px solid #b56c24;
 }
-
-.center #logo1 {
+#header .center #logo1 {
   position: absolute;
   top: 15px;
   left: 35px;
   margin: 0;
 }
-.center #logo1 a {
+#header .center #logo1 a {
   display: block;
   margin: 0;
   padding: 0;
 }
-.center #logo1 a img {
-  width: 165px;
+#header .center #logo1 a img {
+  width: 200px;
   height: 50px;
   margin: 0;
   padding: 0;
@@ -376,13 +383,13 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 }
 
 ul#topnav {
-  font-family: "EmbedFont-1";
   display: inline;
   float: right;
-  margin: 20px 30px 0 200px;
+  margin: 0 30px 0 255px;
   padding: 0;
-  color: #aaaaaa;
+  color: #603913;
   font-size: 11px;
+  font-weight: bold;
   letter-spacing: 0.05em;
   list-style: none;
   z-index: 50;
@@ -403,17 +410,18 @@ ul#topnav li a {
 }
 
 ul#topnav a.topnav {
-  margin: 6px -1px 0 0;
-  padding: 0.5em 2em 0.4em 2em;
+  margin: 0;
+  padding: 21px 2em 11px;
   font-size: 13px;
   text-align: center;
   text-transform: uppercase;
-  border-left: 1px solid #002648;
-  border-right: 1px solid #002648;
+  border-bottom: 3px solid transparent;
 }
 
 ul#topnav li:hover a.topnav, ul#topnav li a.topnav:hover {
-  color: white;
+  color: #8c6545;
+  background: #603913;
+  border-bottom: 3px solid #8c6545;
 }
 
 ul#topnav li .sub {
@@ -423,9 +431,9 @@ ul#topnav li .sub {
   float: left;
   top: 2.7em;
   left: 1px;
-  background: #002648;
+  background: #4b2c0f;
   padding: 5px 0 6px 0;
-  border-top: 2px solid #d8a41c;
+  border-top: 2px solid #8c6545;
   z-index: 50;
 }
 
@@ -461,15 +469,15 @@ ul#topnav .sub ul li a {
   height: auto;
   margin: 0;
   padding: 0.5em 1em;
-  color: #666666;
-  background: #002648;
+  color: #8c6545;
+  background: #4b2c0f;
   text-indent: 0;
   text-decoration: none;
 }
 
 ul#topnav .sub ul li a:hover {
   color: white;
-  background: #006bc7;
+  background: #b56c24;
 }
 
 ul#topnav .sub ul li h2 {
@@ -479,6 +487,8 @@ ul#topnav .sub ul li h2 {
   font-weight: bolder;
 }
 
-.navigation-hover, body.one a#one, body.two a#two, body.five a#five, body.four a#four, body.three a#three {
+.navigation-hover, body.one a#one, body.two a#two, body.five a#five, body.four a#four, body.three a#three, body.six a#six {
   color: white;
+  background: #603913;
+  border-bottom: 3px solid #8c6545;
 }

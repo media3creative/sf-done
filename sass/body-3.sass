@@ -84,7 +84,7 @@
 				margin: 0 ($h-gap / 2) ($v-gap / 2) 0
 				z-index: 100
 			h1
-				font-family: "EmbedFont-1"
+				@extend .font-trajan
 				@extend .box
 				width: ($content-width - ($content-img-w + ($h-gap / 2)))
 				margin: $corner-radius 0 ($v-gap/3) ($content-img-w + ($h-gap / 2))
@@ -97,7 +97,7 @@
 				letter-spacing: .05em
 				border-bottom: 1px solid $section-lines
 			p
-				@extend .font-trebuchet
+				@extend .font-base
 				@extend .box
 				//@extend .clearfix
 				width: 100%
@@ -107,7 +107,7 @@
 				font-size: 12px
 				font-weight: 200
 				text-align: justify
-				line-height: 1.7em
+				line-height: 1.2em
 				&:last-child
 					margin-bottom: 0
 				a

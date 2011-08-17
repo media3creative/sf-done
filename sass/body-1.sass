@@ -54,23 +54,23 @@
 	z-index: 20
 	h1
 		@extend .box
-		font-family: "EmbedFont-1"
+		@extend .font-trajan
 		position: absolute
 		top: ($v-gap * 0.75)
 		left: ($h-gap * 0.75)
 		margin: 0 ($h-gap * 0.75) 0 0
+		padding-right: 1em
 		color: $option-title
 		font-size: 24px
-		font-weight: 100
-		word-spacing: .1em
-		letter-spacing: .05em
+		font-weight: bold
+		border-bottom: 2px solid $secondary
 	h3
 		@extend .box
 		@extend .font-base
 		position: absolute
 		top: 75px
 		left: ($h-gap * 0.75)
-		margin: 0 76px 12px 0
+		margin: 0 66px 12px 0
 		color: $option-text
 		font-size: 12px
 		font-weight: 200
@@ -92,6 +92,9 @@
 		@extend .opaque
 		
 		
-		
-		
+
+#one.right
+	.container
+		h3 
+			top: 100px
 		
