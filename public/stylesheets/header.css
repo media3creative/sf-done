@@ -364,8 +364,8 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 }
 #header .center #logo1 {
   position: absolute;
-  top: 15px;
-  left: 35px;
+  top: 5px;
+  left: 30px;
   margin: 0;
 }
 #header .center #logo1 a {
@@ -374,8 +374,8 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   padding: 0;
 }
 #header .center #logo1 a img {
-  width: 200px;
-  height: 50px;
+  width: 250px;
+  height: 70px;
   margin: 0;
   padding: 0;
   border: 0;
@@ -385,7 +385,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 ul#topnav {
   display: inline;
   float: right;
-  margin: 0 30px 0 255px;
+  margin: 0 30px 0 0;
   padding: 0;
   color: #603913;
   font-size: 11px;
@@ -411,7 +411,7 @@ ul#topnav li a {
 
 ul#topnav a.topnav {
   margin: 0;
-  padding: 21px 1.7em 11px;
+  padding: 25px 1.7em 11px;
   font-size: 13px;
   text-align: center;
   text-transform: uppercase;

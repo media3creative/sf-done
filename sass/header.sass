@@ -22,7 +22,7 @@
 			@extend .box
 			position: absolute
 			top: (($header-height - $logoH)/2)
-			left: (5px	+ $v-gap)
+			left: ($v-gap)
 			margin: 0
 			a
 				display: block
@@ -43,7 +43,7 @@
 ul#topnav
 	@extend .font-trajan
 	+float-right
-	margin: 0 ($v-gap) 0 ($logoW + 25px + $h-gap)
+	margin: 0 ($v-gap) 0 0
 	padding: 0
 	color: $nav-text
 	font-size: 11px
@@ -65,7 +65,7 @@ ul#topnav li a
 ul#topnav a.topnav
 	@extend .box
 	margin: 0
-	padding: 21px 1.7em 11px
+	padding: 25px 1.7em 11px
 	font-size: 13px
 	text-align: center
 	text-transform: uppercase
