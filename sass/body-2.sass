@@ -88,8 +88,8 @@
 		margin: 0 auto
 		padding: 1em 0
 		font-size: 18px
-		font-weight: 100
-		text-transform: uppercase
+		font-weight: bold
+		text-transform: capitalize
 		text-align: left
 	h3
 		@extend .box
@@ -206,13 +206,15 @@
 		height: 200px
 		margin: 0 auto
 		padding: 0
+		border-bottom: 6px solid $secondary
 	#image-bottom
 		position: relative
 		top: -2px
 		width: $sidebar-width
 		height: 25px
 		margin: 0 auto
-		background: url(/images/stripe.jpg) repeat
+		//background: url(/images/stripe.jpg) repeat
+		background: $primary
 
 .main
 	@extend .section
