@@ -6,7 +6,7 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.font-times, .font-base, .subnav h3, .text h3, .button h3, .form h3, .link, .text p, .main .content .section p, .main .content .main p {
+.font-times, .font-base, .subnav h3, .text h3, .img h3, .button h3, .form h3, .link, .text p, .img p, .main .content .section p, .main .content .main p, .main .content .section ul, .main .content .main ul {
   font-family: times, "Times New Roman", Georgia, sans-serif;
 }
 
@@ -18,7 +18,7 @@
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
 }
 
-.font-trajan, .subnav h1, .text h1, .button h1, .form h1, .main .content .section h1, .main .content .main h1 {
+.font-trajan, .subnav h1, .text h1, .img h1, .button h1, .form h1, .main .content .section h1, .main .content .main h1 {
   font-family: "Trajan Pro", "Trajan", "Georgia", "Times New Roman", times, serif;
 }
 
@@ -91,7 +91,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   border-bottom-right-radius: 6px;
 }
 
-.corner-top, .banner .center .content img.banner, .subnav h1, .text h1, .button h1, .form h1, .subnav h3, .text h3, .button h3, .form h3 {
+.corner-top, .banner .center .content img.banner, .subnav h1, .text h1, .img h1, .button h1, .form h1, .subnav h3, .text h3, .img h3, .button h3, .form h3, .img img {
   -moz-border-radius-topleft: 6px;
   -khtml-border-radius-topleft: 6px;
   -webkit-border-top-left-radius: 6px;
@@ -135,7 +135,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   border-bottom-left-radius: 6px;
 }
 
-.corner-all, .link h5, .button p.link, .main .content .section img, .main .content .main img, .container-setup, .subnav, .text, .button, .form {
+.corner-all, .link h5, .button p.link, .main .content .section img, .main .content .main img, .container-setup, .subnav, .text, .img, .button, .form {
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
   -o-border-radius: 6px;
@@ -148,16 +148,16 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   border-bottom-left-radius: 6px;
 }
 
-.clearfix, .body, .body .center, .sidebar, .link, .main .content .section, .main .content .main, .container-setup, .subnav, .text, .button, .form, .columns, .spacer {
+.clearfix, .body, .body .center, .sidebar, .link, .main .content .section, .main .content .main, .container-setup, .subnav, .text, .img, .button, .form, .columns, .spacer {
   zoom: 1;
 }
-.clearfix:before, .body:before, .body .center:before, .sidebar:before, .link:before, .main .content .section:before, .main .content .main:before, .container-setup:before, .subnav:before, .text:before, .button:before, .form:before, .columns:before, .spacer:before {
+.clearfix:before, .body:before, .body .center:before, .sidebar:before, .link:before, .main .content .section:before, .main .content .main:before, .container-setup:before, .subnav:before, .text:before, .img:before, .button:before, .form:before, .columns:before, .spacer:before {
   content: "\0020";
   display: block;
   height: 0;
   overflow: hidden;
 }
-.clearfix:after, .body:after, .body .center:after, .sidebar:after, .link:after, .main .content .section:after, .main .content .main:after, .container-setup:after, .subnav:after, .text:after, .button:after, .form:after, .columns:after, .spacer:after {
+.clearfix:after, .body:after, .body .center:after, .sidebar:after, .link:after, .main .content .section:after, .main .content .main:after, .container-setup:after, .subnav:after, .text:after, .img:after, .button:after, .form:after, .columns:after, .spacer:after {
   content: "\0020";
   display: block;
   height: 0;
@@ -174,7 +174,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   background: transparent;
 }
 
-.box, .center-container, .banner .center, .body .center, .banner, .banner .center .content img.banner, .body, .sidebar, .subnav h1, .text h1, .button h1, .form h1, .subnav h3, .text h3, .button h3, .form h3, .link, .link p, .text p, .button p.link, .main, .main .content, .main .content .section, .main .content .main, .main .content .section img, .main .content .main img, .main .content .section h1, .main .content .main h1, .main .content .section p, .main .content .main p, .container-setup, .subnav, .text, .button, .form {
+.box, .center-container, .banner .center, .body .center, .banner, .banner .center .content img.banner, .body, .sidebar, .subnav h1, .text h1, .img h1, .button h1, .form h1, .subnav h3, .text h3, .img h3, .button h3, .form h3, .link, .link p, .text p, .img p, .button p.link, .img img, .main, .main .content, .main .content .section, .main .content .main, .main .content .section img, .main .content .main img, .main .content .section h1, .main .content .main h1, .main .content .section p, .main .content .main p, .main .content .section ul, .main .content .main ul, .main .content .section ul li, .main .content .main ul li, .container-setup, .subnav, .text, .img, .button, .form {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -213,7 +213,7 @@ b {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.font-times, .font-base, .subnav h3, .text h3, .button h3, .form h3, .link, .text p, .main .content .section p, .main .content .main p {
+.font-times, .font-base, .subnav h3, .text h3, .img h3, .button h3, .form h3, .link, .text p, .img p, .main .content .section p, .main .content .main p, .main .content .section ul, .main .content .main ul {
   font-family: times, "Times New Roman", Georgia, sans-serif;
 }
 
@@ -225,7 +225,7 @@ b {
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
 }
 
-.font-trajan, .subnav h1, .text h1, .button h1, .form h1, .main .content .section h1, .main .content .main h1 {
+.font-trajan, .subnav h1, .text h1, .img h1, .button h1, .form h1, .main .content .section h1, .main .content .main h1 {
   font-family: "Trajan Pro", "Trajan", "Georgia", "Times New Roman", times, serif;
 }
 
@@ -298,7 +298,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   border-bottom-right-radius: 6px;
 }
 
-.corner-top, .banner .center .content img.banner, .subnav h1, .text h1, .button h1, .form h1, .subnav h3, .text h3, .button h3, .form h3 {
+.corner-top, .banner .center .content img.banner, .subnav h1, .text h1, .img h1, .button h1, .form h1, .subnav h3, .text h3, .img h3, .button h3, .form h3, .img img {
   -moz-border-radius-topleft: 6px;
   -khtml-border-radius-topleft: 6px;
   -webkit-border-top-left-radius: 6px;
@@ -342,7 +342,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   border-bottom-left-radius: 6px;
 }
 
-.corner-all, .link h5, .button p.link, .main .content .section img, .main .content .main img, .container-setup, .subnav, .text, .button, .form {
+.corner-all, .link h5, .button p.link, .main .content .section img, .main .content .main img, .container-setup, .subnav, .text, .img, .button, .form {
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
   -o-border-radius: 6px;
@@ -418,7 +418,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   margin: 0 0 30px 30px;
 }
 
-.subnav h1, .text h1, .button h1, .form h1 {
+.subnav h1, .text h1, .img h1, .button h1, .form h1 {
   position: relative;
   color: #603913;
   background: transparent;
@@ -430,7 +430,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   text-transform: uppercase;
   text-align: left;
 }
-.subnav h3, .text h3, .button h3, .form h3 {
+.subnav h3, .text h3, .img h3, .button h3, .form h3 {
   position: relative;
   color: black;
   background: transparent;
@@ -487,7 +487,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   text-decoration: none;
 }
 
-.text p {
+.text p, .img p {
   width: 220px;
   margin: 0 auto 15px;
   padding: 0;
@@ -497,7 +497,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   text-align: justify;
   line-height: 1.2em;
 }
-.text p:last-child {
+.text p:last-child, .img p:last-child {
   margin-bottom: 15px;
 }
 
@@ -524,6 +524,24 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 .form iframe {
   width: 220px;
   margin: 0 30px;
+}
+
+.img {
+  overflow: hidden;
+}
+.img img {
+  width: 280px;
+  height: 200px;
+  margin: 0 auto;
+  padding: 0;
+}
+.img #image-bottom {
+  position: relative;
+  top: -2px;
+  width: 280px;
+  height: 25px;
+  margin: 0 auto;
+  background: url(/images/stripe.jpg) repeat;
 }
 
 .main {
@@ -581,8 +599,28 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 .main .content .section p a:hover, .main .content .main p a:hover {
   color: #603913;
 }
+.main .content .section ul, .main .content .main ul {
+  width: 584px;
+  margin: 6px 0 10px 0;
+  padding: 0 0 0 6px;
+  color: #8c6545;
+  font-size: 14px;
+  font-weight: 200;
+  text-align: left;
+  line-height: 1.4em;
+  list-style-type: disc !important;
+  list-style-position: outside;
+}
+.main .content .section ul li, .main .content .main ul li {
+  margin: 0 0 0 20px;
+  padding: 0 60px 0 0;
+}
 
-.container-setup, .subnav, .text, .button, .form {
+p.left {
+  text-align: left !important;
+}
+
+.container-setup, .subnav, .text, .img, .button, .form {
   position: relative;
   display: inline;
   float: left;

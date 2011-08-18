@@ -22,7 +22,9 @@
   .center
     .content
       #two.sidebar.right
-        .text
+        .img
+          %img{:src => "images/two-1.jpg"}
+          #image-bottom
           %h1 Jerald K. Graber
           %h3
             Attorney at Law
@@ -45,50 +47,46 @@
       #two.main
         .content
           %a{:name => @sub0[1]}
-          .section
-            %img{:src => "images/two-1.jpg"}
+          .section.no-image
             %h1=@sub0[0]
             %p Jerald Graber is a native Houstonian.  He attended HISD schools and graduated from the University of Texas and the University of Houston Law Center.  After learning the ropes of criminal law as a Harris County Assistant District Attorney, Jerald opened his own practice to represent accused individuals.  He and his family live in Houston.
-            %p
-              %b Legal Experience
-              %br
-              &mdash;	1999 to present
-              %br
-              Attorney in private practice
-              %br
-              &mdash;	1991-1999
-              %br
-              Harris County District Attorney's Office
-              %br
-              Assistant District Attorney, Trial Bureau and Special Crimes Bureau
+            %p.left
+              %ul
+                %b Legal Experience
+                %li
+                  1999 to present
+                  %br
+                  Attorney in private practice
+                  %br
+                %li
+                  1991-1999
+                  %br
+                  Harris County District Attorney's Office
+                  %br
+                  Assistant District Attorney, Trial Bureau and Special Crimes Bureau
 
-            %p
-              %b Education
-              %br
-              &mdash;	University of Houston Law Center (J.D., 1991)
-              %br
-              &mdash;	University of Texas at Austin (B.B.A., 1987)
+            %p.left
+              %ul
+                %b Education
+                %li University of Houston Law Center (J.D., 1991)
+                %li University of Texas at Austin (B.B.A., 1987)
 
-            %p
-              %b Bar Admissions
-              %br
-              &mdash;	State Bar of Texas
-              %br
-              &mdash;	Numerous Federal District Courts
+            %p.left
+              %ul
+                %b Bar Admissions
+                %li State Bar of Texas
+                %li Numerous Federal District Courts
 
-            %p
-              %b Certifications
-              %br
-              &mdash;	Board Certified in Criminal Law by the Texas Board of Legal Specialization
-              %br
-              &mdash;	Certified as Counsel in Death Penalty Cases by the Second Administrative Judicial Region of Texas
+            %p.left
+              %ul
+                %b Certifications
+                %li Board Certified in Criminal Law by the Texas Board of Legal Specialization
+                %li Certified as Counsel in Death Penalty Cases by the Second Administrative Judicial Region of Texas
 
-            %p
-              %b Memberships
-              %br
-              &mdash;	National Association of Criminal Defense Lawyers
-              %br
-              &mdash;	Texas Criminal Defense Lawyers Association
-              %br
-              &mdash;	Harris County Criminal Lawyers Association
+            %p.left
+              %ul
+                %b Memberships
+                %li National Association of Criminal Defense Lawyers
+                %li Texas Criminal Defense Lawyers Association
+                %li Harris County Criminal Lawyers Association
               

@@ -194,6 +194,25 @@
 	iframe
 		width: ($option-width - ($h-gap * 2))
 		margin: 0 ($h-gap)
+		
+// Image-style sidebar box
+.img
+	@extend .text
+	overflow: hidden
+	img
+		@extend .box
+		@extend .corner-top
+		width: $sidebar-width
+		height: 200px
+		margin: 0 auto
+		padding: 0
+	#image-bottom
+		position: relative
+		top: -2px
+		width: $sidebar-width
+		height: 25px
+		margin: 0 auto
+		background: url(/images/stripe.jpg) repeat
 
 .main
 	@extend .section
@@ -252,6 +271,26 @@
 					text-decoration: none
 					&:hover
 						color: $primary
+			ul
+				@extend .font-base
+				@extend .box
+				width: ($content-width)
+				margin: $corner-radius 0 ($v-gap/3) 0
+				padding: 0 0 0 $corner-radius
+				color: $section-text
+				font-size: 14px
+				font-weight: 200
+				text-align: left
+				line-height: 1.4em
+				list-style-type: disc !important
+				list-style-position: outside
+				li
+					@extend .box
+					margin: 0 0 0 20px
+					padding: 0 60px 0 0
+
+p.left
+	text-align: left !important
 
 .container-setup
 	@extend .box
