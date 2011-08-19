@@ -37,6 +37,28 @@
 					padding: 0
 					border: 0
 					background: transparent
+		#phone
+			@extend .box
+			@extend .corner-top
+			position: absolute
+			top: 75px
+			right: ($h-gap)
+			width: 200px
+			height: 40px
+			margin: 0
+			background: $secondary-dark
+			img
+				position: relative
+				+float-right
+				width: 30px
+				height: 30px
+			p
+				@extend .font-trajan
+				+float-right
+				margin: 7px 25px 0 10px
+				color: #fff
+				font-weight: bold
+			
 		
 			
 // NAVMENU

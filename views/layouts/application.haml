@@ -204,23 +204,25 @@
           %li
             %a#five.topnav{:href => @link5[1]}
               =@link5[0]
-
+        #phone
+          %p=@linkA1[0]
+          %img{:src => "/images/phone.png"}
 
     .content
       = yield
-      #footer
-        .center
-          .content
-            &nbsp;
-            .row
-              %p.logo-sm
-                %img{:src => "/images/logo-sm.png", :alt => @sitename+" Logo"}
-            .row
-              %p
-                =@linkA1[0]
-                =" - "
-                %a{:href => @linkA2[1]}
-                  =@linkA2[0]
+      / #footer
+      /   .center
+      /     .content
+      /       &nbsp;
+      /       .row
+      /         %p.logo-sm
+      /           %img{:src => "/images/logo-sm.png", :alt => @sitename+" Logo"}
+      /       .row
+      /         %p
+      /           =@linkA1[0]
+      /           =" - "
+      /           %a{:href => @linkA2[1]}
+      /             =@linkA2[0]
               
                   
     .m3c-bar

@@ -18,7 +18,7 @@
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
 }
 
-.font-trajan, ul#topnav {
+.font-trajan, #header .center #phone p, ul#topnav {
   font-family: "Trajan Pro", "Trajan", "Georgia", "Times New Roman", times, serif;
 }
 
@@ -91,7 +91,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   border-bottom-right-radius: 6px;
 }
 
-.corner-top {
+.corner-top, #header .center #phone {
   -moz-border-radius-topleft: 6px;
   -khtml-border-radius-topleft: 6px;
   -webkit-border-top-left-radius: 6px;
@@ -174,7 +174,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   background: transparent;
 }
 
-.box, .center-container, #header .center, #header, #header .center #logo1, ul#topnav a.topnav, ul#topnav .sub ul li a {
+.box, .center-container, #header .center, #header, #header .center #logo1, #header .center #phone, ul#topnav a.topnav, ul#topnav .sub ul li a {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -225,7 +225,7 @@ b {
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
 }
 
-.font-trajan, ul#topnav {
+.font-trajan, #header .center #phone p, ul#topnav {
   font-family: "Trajan Pro", "Trajan", "Georgia", "Times New Roman", times, serif;
 }
 
@@ -298,7 +298,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   border-bottom-right-radius: 6px;
 }
 
-.corner-top {
+.corner-top, #header .center #phone {
   -moz-border-radius-topleft: 6px;
   -khtml-border-radius-topleft: 6px;
   -webkit-border-top-left-radius: 6px;
@@ -380,6 +380,29 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   padding: 0;
   border: 0;
   background: transparent;
+}
+#header .center #phone {
+  position: absolute;
+  top: 75px;
+  right: 30px;
+  width: 200px;
+  height: 40px;
+  margin: 0;
+  background: #7b593d;
+}
+#header .center #phone img {
+  position: relative;
+  display: inline;
+  float: right;
+  width: 30px;
+  height: 30px;
+}
+#header .center #phone p {
+  display: inline;
+  float: right;
+  margin: 7px 25px 0 10px;
+  color: white;
+  font-weight: bold;
 }
 
 ul#topnav {

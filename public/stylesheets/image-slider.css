@@ -63,7 +63,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   background: #b4d5ff;
 }
 
-.corner-top-left {
+.corner-top-left, .nivoSlider {
   -moz-border-radius-topleft: 6px;
   -khtml-border-radius-topleft: 6px;
   -webkit-border-top-left-radius: 6px;
@@ -91,7 +91,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   border-bottom-right-radius: 6px;
 }
 
-.corner-top, .nivoSlider, .nivoSlider img, #slider-wrapper, #slider {
+.corner-top {
   -moz-border-radius-topleft: 6px;
   -khtml-border-radius-topleft: 6px;
   -webkit-border-top-left-radius: 6px;
@@ -270,7 +270,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   background: #b4d5ff;
 }
 
-.corner-top-left {
+.corner-top-left, .nivoSlider {
   -moz-border-radius-topleft: 6px;
   -khtml-border-radius-topleft: 6px;
   -webkit-border-top-left-radius: 6px;
@@ -298,7 +298,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   border-bottom-right-radius: 6px;
 }
 
-.corner-top, .nivoSlider, .nivoSlider img, #slider-wrapper, #slider {
+.corner-top {
   -moz-border-radius-topleft: 6px;
   -khtml-border-radius-topleft: 6px;
   -webkit-border-top-left-radius: 6px;
@@ -424,6 +424,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   position: relative;
   width: 900px;
   height: 300px;
+  border-top: 4px solid #b56c24;
 }
 
 .nivoSlider img {

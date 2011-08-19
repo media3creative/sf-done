@@ -85,14 +85,15 @@
 // The Nivo Slider styles //
 .nivoSlider
 	@extend .box
-	@extend .corner-top
+	@extend .corner-top-left
 	position: relative
 	width: $inside-width
 	height: $slider-height
+	border-top: 4px solid $primary-light
 
 .nivoSlider img 
 	@extend .box
-	@extend .corner-top
+	//@extend .corner-top
 	position: absolute
 	top: 0px
 	left: 0px
@@ -182,7 +183,7 @@ a.nivo-nextNav
 
 #slider-wrapper 
 	@extend .box
-	@extend .corner-top
+	//@extend .corner-top
 	font-family: "EmbedFont-1"
 	position: relative
 	width: $inside-width
@@ -194,7 +195,7 @@ a.nivo-nextNav
 
 #slider
 	@extend .box
-	@extend .corner-top
+	//@extend .corner-top
 	position: relative
 	width: $inside-width
 	height: $slider-height
