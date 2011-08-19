@@ -616,6 +616,8 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 .main .content .section ul li, .main .content .main ul li {
   margin: 0 0 0 20px;
   padding: 0 60px 0 0;
+  font-size: 14px;
+  font-weight: 200;
 }
 
 p.left {
