@@ -1,4 +1,4 @@
-.font-helvetica, .container-setup, .body .center .content .left a.container, .body .center .content .middle a.container, .body .center .content .right a.container {
+.font-helvetica, .font-base, .container-setup h1, .body .center .content .left a.container h1, .body .center .content .middle a.container h1, .body .center .content .right a.container h1, .container-setup h3, .body .center .content .left a.container h3, .body .center .content .middle a.container h3, .body .center .content .right a.container h3, .container-setup p.link, .body .center .content .left a.container p.link, .body .center .content .middle a.container p.link, .body .center .content .right a.container p.link, .container-setup, .body .center .content .left a.container, .body .center .content .middle a.container, .body .center .content .right a.container {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -6,7 +6,7 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.font-times, .font-base, .container-setup h3, .body .center .content .left a.container h3, .body .center .content .middle a.container h3, .body .center .content .right a.container h3, .container-setup p.link, .body .center .content .left a.container p.link, .body .center .content .middle a.container p.link, .body .center .content .right a.container p.link {
+.font-times {
   font-family: times, "Times New Roman", Georgia, sans-serif;
 }
 
@@ -18,15 +18,15 @@
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
 }
 
-.font-trajan, .container-setup h1, .body .center .content .left a.container h1, .body .center .content .middle a.container h1, .body .center .content .right a.container h1 {
+.font-trajan {
   font-family: "Trajan Pro", "Trajan", "Georgia", "Times New Roman", times, serif;
 }
 
 .bg-gradient-primary {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#b56c24), to(#603913));
+  background: -webkit-gradient(linear, left top, left bottom, from(#1a3c8b), to(#0a1735));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #b56c24, #603913);
+  background: -moz-linear-gradient(top, #1a3c8b, #0a1735);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$primary-light, endColorstr=$primary);
   /* For Internet Explorer 8 */
@@ -35,9 +35,9 @@
 
 .bg-gradient-reverse {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#603913), to(#b56c24));
+  background: -webkit-gradient(linear, left top, left bottom, from(#0a1735), to(#1a3c8b));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #603913, #b56c24);
+  background: -moz-linear-gradient(top, #0a1735, #1a3c8b);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$primary, endColorstr=$primary-light);
   /* For Internet Explorer 8 */
@@ -46,9 +46,9 @@
 
 .bg-gradient-secondary {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#ac7e58), to(#8c6545));
+  background: -webkit-gradient(linear, left top, left bottom, from(#eeeeee), to(#d4d4d4));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #ac7e58, #8c6545);
+  background: -moz-linear-gradient(top, #eeeeee, #d4d4d4);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$secondary-light, endColorstr=$secondary);
   /* For Internet Explorer 8 */
@@ -201,11 +201,11 @@ p {
 }
 
 b {
-  color: black !important;
+  color: #0a1735 !important;
   font-weight: bold;
 }
 
-.font-helvetica, .container-setup, .body .center .content .left a.container, .body .center .content .middle a.container, .body .center .content .right a.container {
+.font-helvetica, .font-base, .container-setup h1, .body .center .content .left a.container h1, .body .center .content .middle a.container h1, .body .center .content .right a.container h1, .container-setup h3, .body .center .content .left a.container h3, .body .center .content .middle a.container h3, .body .center .content .right a.container h3, .container-setup p.link, .body .center .content .left a.container p.link, .body .center .content .middle a.container p.link, .body .center .content .right a.container p.link, .container-setup, .body .center .content .left a.container, .body .center .content .middle a.container, .body .center .content .right a.container {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -213,7 +213,7 @@ b {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.font-times, .font-base, .container-setup h3, .body .center .content .left a.container h3, .body .center .content .middle a.container h3, .body .center .content .right a.container h3, .container-setup p.link, .body .center .content .left a.container p.link, .body .center .content .middle a.container p.link, .body .center .content .right a.container p.link {
+.font-times {
   font-family: times, "Times New Roman", Georgia, sans-serif;
 }
 
@@ -225,15 +225,15 @@ b {
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
 }
 
-.font-trajan, .container-setup h1, .body .center .content .left a.container h1, .body .center .content .middle a.container h1, .body .center .content .right a.container h1 {
+.font-trajan {
   font-family: "Trajan Pro", "Trajan", "Georgia", "Times New Roman", times, serif;
 }
 
 .bg-gradient-primary {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#b56c24), to(#603913));
+  background: -webkit-gradient(linear, left top, left bottom, from(#1a3c8b), to(#0a1735));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #b56c24, #603913);
+  background: -moz-linear-gradient(top, #1a3c8b, #0a1735);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$primary-light, endColorstr=$primary);
   /* For Internet Explorer 8 */
@@ -242,9 +242,9 @@ b {
 
 .bg-gradient-reverse {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#603913), to(#b56c24));
+  background: -webkit-gradient(linear, left top, left bottom, from(#0a1735), to(#1a3c8b));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #603913, #b56c24);
+  background: -moz-linear-gradient(top, #0a1735, #1a3c8b);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$primary, endColorstr=$primary-light);
   /* For Internet Explorer 8 */
@@ -253,9 +253,9 @@ b {
 
 .bg-gradient-secondary {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#ac7e58), to(#8c6545));
+  background: -webkit-gradient(linear, left top, left bottom, from(#eeeeee), to(#d4d4d4));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #ac7e58, #8c6545);
+  background: -moz-linear-gradient(top, #eeeeee, #d4d4d4);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$secondary-light, endColorstr=$secondary);
   /* For Internet Explorer 8 */
@@ -385,7 +385,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   float: left;
   width: 280px;
   height: 200px;
-  background: #c6ae9b;
+  background: #efefef;
   border: 1px solid #dddddd;
   z-index: 20;
 }
@@ -395,17 +395,17 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   left: 22.5px;
   margin: 0 22.5px 0 0;
   padding-right: 1em;
-  color: #603913;
+  color: #0a1735;
   font-size: 24px;
-  font-weight: bold;
-  border-bottom: 2px solid #8c6545;
+  font-weight: 200;
+  border-bottom: 2px solid #d4d4d4;
 }
 .container-setup h3, .body .center .content .left a.container h3, .body .center .content .middle a.container h3, .body .center .content .right a.container h3 {
   position: absolute;
   top: 75px;
   left: 22.5px;
   margin: 0 66px 12px 0;
-  color: white;
+  color: #0a1735;
   font-size: 12px;
   font-weight: 200;
   line-height: 1.3em;
@@ -415,7 +415,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   bottom: 15px;
   left: 22.5px;
   display: inline;
-  color: #8c6545;
+  color: #aaaaaa;
   font-size: 11px;
   font-weight: 200;
   text-decoration: none;

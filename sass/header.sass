@@ -63,13 +63,13 @@
 			
 // NAVMENU
 ul#topnav
-	@extend .font-trajan
+	@extend .font-helvetica
 	+float-right
-	margin: 0 ($v-gap) 0 0
+	margin: 33px ($v-gap) 0 0
 	padding: 0
 	color: $nav-text
 	font-size: 11px
-	font-weight: bold
+	font-weight: 200
 	letter-spacing: 0.05em
 	list-style: none
 	z-index: 50
@@ -79,6 +79,9 @@ ul#topnav li
 	+float-left
 	margin: 0
 	padding: 0
+	border-right: 1px solid $nav-lines
+	&:last-child
+		border-right: none
 
 ul#topnav li a 
 	+float-left
@@ -87,17 +90,14 @@ ul#topnav li a
 ul#topnav a.topnav
 	@extend .box
 	margin: 0
-	padding: 25px 1.7em 11px
+	padding: 7px 1.7em
 	font-size: 13px
 	text-align: center
 	text-transform: uppercase
-	border-bottom: 3px solid transparent
-
+	
 ul#topnav li:hover a.topnav, ul#topnav li a.topnav:hover 
 	color: $nav-text-hover
-	background: $primary
-	border-bottom: 3px solid $nav-lines
-	
+	background: #efefef	
  
 ul#topnav li .sub 
 	@extend .corner-bottom
@@ -158,9 +158,5 @@ ul#topnav .sub ul li h2
 
 //Navigation Active Classes
 body.one a#one, body.two a#two, body.five a#five, body.four a#four, body.three a#three, body.six a#six
-	@extend .navigation-hover
-
-.navigation-hover
 	color: #fff
 	background: $primary
-	border-bottom: 3px solid $nav-lines

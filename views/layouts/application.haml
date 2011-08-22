@@ -1,10 +1,10 @@
-- @sitename = "Jerald K. Graber :: Attorney at Law"
+- @sitename = "Steadfast"
 
 // MAIN NAVIGATION
 - @link1 = ["Home", "/home"]
-- @link2 = ["Profile", "/profile"]
-- @link3 = ["Practice", "/law"]
-- @link4 = ["Board Certified", "/cert"]
+- @link2 = ["Services", "/services"]
+- @link3 = ["Our Company", "/company"]
+- @link4 = ["News &amp; Press", "/newspress"]
 - @link5 = ["Contact", "/contact"]
 
 // FOOTER LINKS
@@ -14,8 +14,8 @@
 - @linkA4 = ["link name", "/path"]
 - @linkA5 = ["link name", "/path"]
 
-- @linkB1 = ["link name", "/path"]
-- @linkB2 = ["link name", "/path"]
+- @linkB1 = ["Terms of Service", "/legal#terms"]
+- @linkB2 = ["Privacy Policy", "/legal#privacy"]
 - @linkB3 = ["link name", "/path"]
 - @linkB4 = ["link name", "/path"]
 - @linkB5 = ["link name", "/path"]
@@ -204,25 +204,29 @@
           %li
             %a#five.topnav{:href => @link5[1]}
               =@link5[0]
-        #phone
-          %p=@linkA1[0]
-          %img{:src => "/images/phone.png"}
 
     .content
       = yield
-      / #footer
-      /   .center
-      /     .content
-      /       &nbsp;
-      /       .row
-      /         %p.logo-sm
-      /           %img{:src => "/images/logo-sm.png", :alt => @sitename+" Logo"}
-      /       .row
-      /         %p
-      /           =@linkA1[0]
-      /           =" - "
-      /           %a{:href => @linkA2[1]}
-      /             =@linkA2[0]
+      #footer
+        .center
+          .content
+            &nbsp;
+            .row
+              %p
+                %img{:src => "/images/logo-sm.png", :alt => @sitename+" Logo"}
+            .row
+              %p
+                %a{:href => @linkB1[1]}
+                  =@linkB1[0]
+                =" | "
+                %a{:href => @linkB2[1]}
+                  =@linkB2[0]
+            .row
+              %p
+                =@linkA1[0]
+                =" - "
+                %a{:href => @linkA2[1]}
+                  =@linkA2[0]
               
                   
     .m3c-bar

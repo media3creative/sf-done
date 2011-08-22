@@ -1,4 +1,4 @@
-.font-helvetica {
+.font-helvetica, .font-base, ul#topnav {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -6,7 +6,7 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.font-times, .font-base {
+.font-times {
   font-family: times, "Times New Roman", Georgia, sans-serif;
 }
 
@@ -18,15 +18,15 @@
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
 }
 
-.font-trajan, #header .center #phone p, ul#topnav {
+.font-trajan, #header .center #phone p {
   font-family: "Trajan Pro", "Trajan", "Georgia", "Times New Roman", times, serif;
 }
 
 .bg-gradient-primary {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#b56c24), to(#603913));
+  background: -webkit-gradient(linear, left top, left bottom, from(#1a3c8b), to(#0a1735));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #b56c24, #603913);
+  background: -moz-linear-gradient(top, #1a3c8b, #0a1735);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$primary-light, endColorstr=$primary);
   /* For Internet Explorer 8 */
@@ -35,9 +35,9 @@
 
 .bg-gradient-reverse {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#603913), to(#b56c24));
+  background: -webkit-gradient(linear, left top, left bottom, from(#0a1735), to(#1a3c8b));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #603913, #b56c24);
+  background: -moz-linear-gradient(top, #0a1735, #1a3c8b);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$primary, endColorstr=$primary-light);
   /* For Internet Explorer 8 */
@@ -46,9 +46,9 @@
 
 .bg-gradient-secondary {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#ac7e58), to(#8c6545));
+  background: -webkit-gradient(linear, left top, left bottom, from(#eeeeee), to(#d4d4d4));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #ac7e58, #8c6545);
+  background: -moz-linear-gradient(top, #eeeeee, #d4d4d4);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$secondary-light, endColorstr=$secondary);
   /* For Internet Explorer 8 */
@@ -201,11 +201,11 @@ p {
 }
 
 b {
-  color: black !important;
+  color: #0a1735 !important;
   font-weight: bold;
 }
 
-.font-helvetica {
+.font-helvetica, .font-base, ul#topnav {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -213,7 +213,7 @@ b {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.font-times, .font-base {
+.font-times {
   font-family: times, "Times New Roman", Georgia, sans-serif;
 }
 
@@ -225,15 +225,15 @@ b {
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
 }
 
-.font-trajan, #header .center #phone p, ul#topnav {
+.font-trajan, #header .center #phone p {
   font-family: "Trajan Pro", "Trajan", "Georgia", "Times New Roman", times, serif;
 }
 
 .bg-gradient-primary {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#b56c24), to(#603913));
+  background: -webkit-gradient(linear, left top, left bottom, from(#1a3c8b), to(#0a1735));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #b56c24, #603913);
+  background: -moz-linear-gradient(top, #1a3c8b, #0a1735);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$primary-light, endColorstr=$primary);
   /* For Internet Explorer 8 */
@@ -242,9 +242,9 @@ b {
 
 .bg-gradient-reverse {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#603913), to(#b56c24));
+  background: -webkit-gradient(linear, left top, left bottom, from(#0a1735), to(#1a3c8b));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #603913, #b56c24);
+  background: -moz-linear-gradient(top, #0a1735, #1a3c8b);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$primary, endColorstr=$primary-light);
   /* For Internet Explorer 8 */
@@ -253,9 +253,9 @@ b {
 
 .bg-gradient-secondary {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#ac7e58), to(#8c6545));
+  background: -webkit-gradient(linear, left top, left bottom, from(#eeeeee), to(#d4d4d4));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #ac7e58, #8c6545);
+  background: -moz-linear-gradient(top, #eeeeee, #d4d4d4);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$secondary-light, endColorstr=$secondary);
   /* For Internet Explorer 8 */
@@ -360,11 +360,11 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   height: 80px;
   margin: 0;
   padding: 0;
-  border-top: 4px solid #b56c24;
+  border-top: 4px solid #1a3c8b;
 }
 #header .center #logo1 {
   position: absolute;
-  top: 5px;
+  top: 15px;
   left: 30px;
   margin: 0;
 }
@@ -374,8 +374,8 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   padding: 0;
 }
 #header .center #logo1 a img {
-  width: 250px;
-  height: 70px;
+  width: 225px;
+  height: 50px;
   margin: 0;
   padding: 0;
   border: 0;
@@ -388,7 +388,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   width: 200px;
   height: 40px;
   margin: 0;
-  background: #7b593d;
+  background: #c7c7c7;
 }
 #header .center #phone img {
   position: relative;
@@ -408,11 +408,11 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 ul#topnav {
   display: inline;
   float: right;
-  margin: 0 30px 0 0;
+  margin: 33px 30px 0 0;
   padding: 0;
-  color: #603913;
+  color: #0a1735;
   font-size: 11px;
-  font-weight: bold;
+  font-weight: 200;
   letter-spacing: 0.05em;
   list-style: none;
   z-index: 50;
@@ -424,6 +424,10 @@ ul#topnav li {
   float: left;
   margin: 0;
   padding: 0;
+  border-right: 1px solid #d4d4d4;
+}
+ul#topnav li:last-child {
+  border-right: none;
 }
 
 ul#topnav li a {
@@ -434,17 +438,15 @@ ul#topnav li a {
 
 ul#topnav a.topnav {
   margin: 0;
-  padding: 25px 1.7em 11px;
+  padding: 7px 1.7em;
   font-size: 13px;
   text-align: center;
   text-transform: uppercase;
-  border-bottom: 3px solid transparent;
 }
 
 ul#topnav li:hover a.topnav, ul#topnav li a.topnav:hover {
-  color: #8c6545;
-  background: #603913;
-  border-bottom: 3px solid #8c6545;
+  color: #0a1735;
+  background: #efefef;
 }
 
 ul#topnav li .sub {
@@ -454,9 +456,9 @@ ul#topnav li .sub {
   float: left;
   top: 2.7em;
   left: 1px;
-  background: #4b2c0f;
+  background: #060e20;
   padding: 5px 0 6px 0;
-  border-top: 2px solid #8c6545;
+  border-top: 2px solid #d4d4d4;
   z-index: 50;
 }
 
@@ -492,15 +494,15 @@ ul#topnav .sub ul li a {
   height: auto;
   margin: 0;
   padding: 0.5em 1em;
-  color: #8c6545;
-  background: #4b2c0f;
+  color: #d4d4d4;
+  background: #060e20;
   text-indent: 0;
   text-decoration: none;
 }
 
 ul#topnav .sub ul li a:hover {
   color: white;
-  background: #b56c24;
+  background: #1a3c8b;
 }
 
 ul#topnav .sub ul li h2 {
@@ -510,8 +512,7 @@ ul#topnav .sub ul li h2 {
   font-weight: bolder;
 }
 
-.navigation-hover, body.one a#one, body.two a#two, body.five a#five, body.four a#four, body.three a#three, body.six a#six {
+body.one a#one, body.two a#two, body.five a#five, body.four a#four, body.three a#three, body.six a#six {
   color: white;
-  background: #603913;
-  border-bottom: 3px solid #8c6545;
+  background: #0a1735;
 }

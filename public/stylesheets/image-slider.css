@@ -1,4 +1,4 @@
-.font-helvetica {
+.font-helvetica, .font-base, .caption h1, .image-slider .center .captionLeft h1, .image-slider .center .captionRight h1, .caption h3, .image-slider .center .captionLeft h3, .image-slider .center .captionRight h3 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -6,7 +6,7 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.font-times, .font-base, .image-slider .center .captionContainer h3 {
+.font-times {
   font-family: times, "Times New Roman", Georgia, sans-serif;
 }
 
@@ -18,26 +18,26 @@
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
 }
 
-.font-trajan, .image-slider .center .captionContainer h1 {
+.font-trajan {
   font-family: "Trajan Pro", "Trajan", "Georgia", "Times New Roman", times, serif;
 }
 
-.bg-gradient-primary, .image-slider .center .captionContainer p.link {
+.bg-gradient-primary, .caption p.link, .image-slider .center .captionLeft p.link, .image-slider .center .captionRight p.link {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#b56c24), to(#603913));
+  background: -webkit-gradient(linear, left top, left bottom, from(#1a3c8b), to(#0a1735));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #b56c24, #603913);
+  background: -moz-linear-gradient(top, #1a3c8b, #0a1735);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$primary-light, endColorstr=$primary);
   /* For Internet Explorer 8 */
   -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$primary-light, endColorstr=$primary);
 }
 
-.bg-gradient-reverse, .image-slider .center .captionContainer p.link:hover {
+.bg-gradient-reverse, .caption p.link:hover, .image-slider .center .captionLeft p.link:hover, .image-slider .center .captionRight p.link:hover {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#603913), to(#b56c24));
+  background: -webkit-gradient(linear, left top, left bottom, from(#0a1735), to(#1a3c8b));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #603913, #b56c24);
+  background: -moz-linear-gradient(top, #0a1735, #1a3c8b);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$primary, endColorstr=$primary-light);
   /* For Internet Explorer 8 */
@@ -46,9 +46,9 @@
 
 .bg-gradient-secondary {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#ac7e58), to(#8c6545));
+  background: -webkit-gradient(linear, left top, left bottom, from(#eeeeee), to(#d4d4d4));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #ac7e58, #8c6545);
+  background: -moz-linear-gradient(top, #eeeeee, #d4d4d4);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$secondary-light, endColorstr=$secondary);
   /* For Internet Explorer 8 */
@@ -63,7 +63,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   background: #b4d5ff;
 }
 
-.corner-top-left, .nivoSlider {
+.corner-top-left {
   -moz-border-radius-topleft: 6px;
   -khtml-border-radius-topleft: 6px;
   -webkit-border-top-left-radius: 6px;
@@ -135,7 +135,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   border-bottom-left-radius: 6px;
 }
 
-.corner-all, .image-slider .center .captionContainer p.link {
+.corner-all, .caption p.link, .image-slider .center .captionLeft p.link, .image-slider .center .captionRight p.link, #slider {
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
   -o-border-radius: 6px;
@@ -174,7 +174,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   background: transparent;
 }
 
-.box, .center-container, .image-slider .center, .image-slider, .image-slider .center .captionContainer, .image-slider .center .captionContainer h1, .image-slider .center .captionContainer h3, .image-slider .center .captionContainer p.link, .nivoSlider, .nivoSlider img, #slider-wrapper, #slider {
+.box, .center-container, .image-slider .center, .image-slider, .caption, .image-slider .center .captionLeft, .image-slider .center .captionRight, .caption h1, .image-slider .center .captionLeft h1, .image-slider .center .captionRight h1, .caption h3, .image-slider .center .captionLeft h3, .image-slider .center .captionRight h3, .caption p.link, .image-slider .center .captionLeft p.link, .image-slider .center .captionRight p.link, .nivoSlider, .nivoSlider img, #slider-wrapper, #slider {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -201,11 +201,11 @@ p {
 }
 
 b {
-  color: black !important;
+  color: #0a1735 !important;
   font-weight: bold;
 }
 
-.font-helvetica {
+.font-helvetica, .font-base, .caption h1, .image-slider .center .captionLeft h1, .image-slider .center .captionRight h1, .caption h3, .image-slider .center .captionLeft h3, .image-slider .center .captionRight h3 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -213,7 +213,7 @@ b {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.font-times, .font-base, .image-slider .center .captionContainer h3 {
+.font-times {
   font-family: times, "Times New Roman", Georgia, sans-serif;
 }
 
@@ -225,26 +225,26 @@ b {
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
 }
 
-.font-trajan, .image-slider .center .captionContainer h1 {
+.font-trajan {
   font-family: "Trajan Pro", "Trajan", "Georgia", "Times New Roman", times, serif;
 }
 
-.bg-gradient-primary, .image-slider .center .captionContainer p.link {
+.bg-gradient-primary, .caption p.link, .image-slider .center .captionLeft p.link, .image-slider .center .captionRight p.link {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#b56c24), to(#603913));
+  background: -webkit-gradient(linear, left top, left bottom, from(#1a3c8b), to(#0a1735));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #b56c24, #603913);
+  background: -moz-linear-gradient(top, #1a3c8b, #0a1735);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$primary-light, endColorstr=$primary);
   /* For Internet Explorer 8 */
   -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$primary-light, endColorstr=$primary);
 }
 
-.bg-gradient-reverse, .image-slider .center .captionContainer p.link:hover {
+.bg-gradient-reverse, .caption p.link:hover, .image-slider .center .captionLeft p.link:hover, .image-slider .center .captionRight p.link:hover {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#603913), to(#b56c24));
+  background: -webkit-gradient(linear, left top, left bottom, from(#0a1735), to(#1a3c8b));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #603913, #b56c24);
+  background: -moz-linear-gradient(top, #0a1735, #1a3c8b);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$primary, endColorstr=$primary-light);
   /* For Internet Explorer 8 */
@@ -253,9 +253,9 @@ b {
 
 .bg-gradient-secondary {
   /* For WebKit (Safari, Google Chrome etc) */
-  background: -webkit-gradient(linear, left top, left bottom, from(#ac7e58), to(#8c6545));
+  background: -webkit-gradient(linear, left top, left bottom, from(#eeeeee), to(#d4d4d4));
   /* For Mozilla/Gecko (Firefox etc) */
-  background: -moz-linear-gradient(top, #ac7e58, #8c6545);
+  background: -moz-linear-gradient(top, #eeeeee, #d4d4d4);
   /* For Internet Explorer 5.5 - 7 */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$secondary-light, endColorstr=$secondary);
   /* For Internet Explorer 8 */
@@ -270,7 +270,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   background: #b4d5ff;
 }
 
-.corner-top-left, .nivoSlider {
+.corner-top-left {
   -moz-border-radius-topleft: 6px;
   -khtml-border-radius-topleft: 6px;
   -webkit-border-top-left-radius: 6px;
@@ -342,7 +342,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   border-bottom-left-radius: 6px;
 }
 
-.corner-all, .image-slider .center .captionContainer p.link {
+.corner-all, .caption p.link, .image-slider .center .captionLeft p.link, .image-slider .center .captionRight p.link, #slider {
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
   -o-border-radius: 6px;
@@ -363,46 +363,50 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 .image-slider .center {
   padding: 30px 0 15px;
 }
-.image-slider .center .captionContainer {
+.image-slider .center .captionLeft {
+  left: 60px;
+}
+.image-slider .center .captionRight {
+  right: 60px;
+}
+
+.caption, .image-slider .center .captionLeft, .image-slider .center .captionRight {
   position: absolute;
-  width: 300px;
+  width: 400px;
   height: 300px;
   top: 0;
-  left: 60px;
   margin: 0;
   padding: 12px;
   background: url(/images/nav_bg.png) repeat;
 }
-.image-slider .center .captionContainer h1 {
-  margin: 50px 0 6px 0;
+.caption h1, .image-slider .center .captionLeft h1, .image-slider .center .captionRight h1 {
+  margin: 100px 0 6px 0;
   padding: 0;
-  color: white;
+  color: #efefef;
   font-size: 30px;
   font-weight: 100;
   text-align: left;
-  text-shadow: 2px 2px 1px black;
   line-height: 1em;
 }
-.image-slider .center .captionContainer h3 {
+.caption h3, .image-slider .center .captionLeft h3, .image-slider .center .captionRight h3 {
   position: relative;
   top: 0px;
   margin: 15px 0 6px 0;
   padding: 0;
-  color: #c6ae9b;
+  color: #efefef;
   font-size: 14px;
   font-weight: 200;
   text-align: left;
-  text-shadow: 1px 1px 1px black;
   line-height: 1.1em;
 }
-.image-slider .center .captionContainer p.link {
+.caption p.link, .image-slider .center .captionLeft p.link, .image-slider .center .captionRight p.link {
   position: absolute;
   bottom: 15px;
   left: 30px;
   color: white;
-  border: 1px solid #603913;
+  border: 1px solid #0a1735;
 }
-.image-slider .center .captionContainer p.link a {
+.caption p.link a, .image-slider .center .captionLeft p.link a, .image-slider .center .captionRight p.link a {
   font-family: "EmbedFont-1";
   display: block;
   padding: 9px 2em 8px 2em;
@@ -424,7 +428,6 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   position: relative;
   width: 900px;
   height: 300px;
-  border-top: 4px solid #b56c24;
 }
 
 .nivoSlider img {
@@ -530,7 +533,7 @@ a.nivo-nextNav {
   height: 300px;
   margin: 0 auto;
   overflow: hidden;
-  background: white;
+  background: #efefef;
 }
 
 #slider {
