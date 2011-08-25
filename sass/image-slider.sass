@@ -19,24 +19,25 @@
 		padding: $v-gap 0 ($v-gap/2)
 		.captionLeft
 			@extend .caption
-			left: $h-gap *2
+			@extend .corner-right
+			left: 0
 		.captionRight
 			@extend .caption
-			right: $h-gap *2	
+			@extend .corner-left
+			right: 0	
 
 .caption
 	@extend .box
 	position: absolute
-	width: 400px
-	height: 300px
-	top: 0
+	width: 500px
+	top: 100px
 	margin: 0
 	padding: $corner-radius*2
-	background: url(/images/nav_bg.png) repeat
+	background: url(/images/nav_bg2.png) repeat
 	h1
 		@extend .box
 		@extend .font-base
-		margin: 100px 0 $corner-radius 0
+		margin: 0 0 $corner-radius 0
 		padding: 0
 		color: $image-slider-title
 		font-size: 30px
@@ -88,12 +89,15 @@
 // The Nivo Slider styles //
 .nivoSlider
 	@extend .box
+	@extend .corner-all
 	position: relative
 	width: $inside-width
 	height: $slider-height
+	border: 1px solid $line-color
 
 .nivoSlider img 
 	@extend .box
+	@extend .corner-all
 	position: absolute
 	top: 0px
 	left: 0px
@@ -183,6 +187,7 @@ a.nivo-nextNav
 
 #slider-wrapper 
 	@extend .box
+	@extend .corner-all
 	font-family: "EmbedFont-1"
 	position: relative
 	width: $inside-width

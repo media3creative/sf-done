@@ -75,7 +75,7 @@
     :javascript
       $(window).load(function() {
           $('#slider').nivoSlider({
-                  effect:'fade', // Specify sets like: 'fold,fade,sliceDown'
+                  effect:'slideInLeft', // Specify sets like: 'fold,fade,sliceDown'
                   slices: 15, // For slice animations
                   boxCols: 19, // For box animations
                   boxRows: 8, // For box animations
@@ -183,6 +183,9 @@
             %a#one.topnav{:href => @link1[1]}
               =@link1[0]
           %li
+            %a#three.topnav{:href => @link3[1]}
+              =@link3[0]
+          %li
             %a#two.topnav{:href => @link2[1]}
               =@link2[0]
             .sub
@@ -195,9 +198,6 @@
                 /   %a{:href => "#"} Navigation Link
                 / %li
                 /   %a{:href => "#"} Navigation Link
-          %li
-            %a#three.topnav{:href => @link3[1]}
-              =@link3[0]
           %li
             %a#four.topnav{:href => @link4[1]}
               =@link4[0]

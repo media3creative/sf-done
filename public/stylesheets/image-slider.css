@@ -102,7 +102,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   border-top-right-radius: 6px;
 }
 
-.corner-right {
+.corner-right, .image-slider .center .captionLeft {
   -moz-border-radius-topright: 6px;
   -khtml-border-radius-topright: 6px;
   -webkit-border-top-right-radius: 6px;
@@ -124,7 +124,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   border-bottom-right-radius: 6px;
 }
 
-.corner-left {
+.corner-left, .image-slider .center .captionRight {
   -moz-border-radius-topright: 6px;
   -khtml-border-radius-topright: 6px;
   -webkit-border-top-right-radius: 6px;
@@ -135,7 +135,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   border-bottom-left-radius: 6px;
 }
 
-.corner-all, .caption p.link, .image-slider .center .captionLeft p.link, .image-slider .center .captionRight p.link, #slider {
+.corner-all, .caption p.link, .image-slider .center .captionLeft p.link, .image-slider .center .captionRight p.link, .nivoSlider, .nivoSlider img, #slider-wrapper, #slider {
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
   -o-border-radius: 6px;
@@ -309,7 +309,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   border-top-right-radius: 6px;
 }
 
-.corner-right {
+.corner-right, .image-slider .center .captionLeft {
   -moz-border-radius-topright: 6px;
   -khtml-border-radius-topright: 6px;
   -webkit-border-top-right-radius: 6px;
@@ -331,7 +331,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   border-bottom-right-radius: 6px;
 }
 
-.corner-left {
+.corner-left, .image-slider .center .captionRight {
   -moz-border-radius-topright: 6px;
   -khtml-border-radius-topright: 6px;
   -webkit-border-top-right-radius: 6px;
@@ -342,7 +342,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   border-bottom-left-radius: 6px;
 }
 
-.corner-all, .caption p.link, .image-slider .center .captionLeft p.link, .image-slider .center .captionRight p.link, #slider {
+.corner-all, .caption p.link, .image-slider .center .captionLeft p.link, .image-slider .center .captionRight p.link, .nivoSlider, .nivoSlider img, #slider-wrapper, #slider {
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
   -o-border-radius: 6px;
@@ -364,23 +364,22 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   padding: 30px 0 15px;
 }
 .image-slider .center .captionLeft {
-  left: 60px;
+  left: 0;
 }
 .image-slider .center .captionRight {
-  right: 60px;
+  right: 0;
 }
 
 .caption, .image-slider .center .captionLeft, .image-slider .center .captionRight {
   position: absolute;
-  width: 400px;
-  height: 300px;
-  top: 0;
+  width: 500px;
+  top: 100px;
   margin: 0;
   padding: 12px;
-  background: url(/images/nav_bg.png) repeat;
+  background: url(/images/nav_bg2.png) repeat;
 }
 .caption h1, .image-slider .center .captionLeft h1, .image-slider .center .captionRight h1 {
-  margin: 100px 0 6px 0;
+  margin: 0 0 6px 0;
   padding: 0;
   color: #efefef;
   font-size: 30px;
@@ -428,6 +427,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   position: relative;
   width: 900px;
   height: 300px;
+  border: 1px solid #dddddd;
 }
 
 .nivoSlider img {
