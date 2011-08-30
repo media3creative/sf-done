@@ -1,4 +1,4 @@
-.font-helvetica, .font-base, .main .content .section p, .main .content .main p, .main {
+.font-helvetica, .font-base, .text-box h1, .text-box p, .main .content .section p, .main .content .main p, .main {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -135,7 +135,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   border-bottom-left-radius: 6px;
 }
 
-.corner-all, .banner .center .content img.banner, .main .content .section img, .main .content .main img, .container-setup {
+.corner-all, .banner .center .content, .banner .center .content img.banner, .main .content .section img, .main .content .main img, .container-setup {
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
   -o-border-radius: 6px;
@@ -174,7 +174,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   background: transparent;
 }
 
-.box, .center-container, .banner .center, .body .center, .banner, .banner .center .content img.banner, .body, .main, .main .content, .main .content .section, .main .content .main, .main .content .section img, .main .content .main img, .main .content .section h1, .main .content .main h1, .main .content .section p, .main .content .main p, .main .content .section p img, .main .content .main p img, .container-setup {
+.box, .center-container, .banner .center, .body .center, .banner, .banner .center .content img.banner, .text-box, .text-box h1, .text-box p, .body, .main, .main .content, .main .content .section, .main .content .main, .main .content .section img, .main .content .main img, .main .content .section h1, .main .content .main h1, .main .content .section p, .main .content .main p, .main .content .section p img, .main .content .main p img, .container-setup {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -205,7 +205,7 @@ b {
   font-weight: bold;
 }
 
-.font-helvetica, .font-base, .main .content .section p, .main .content .main p, .main {
+.font-helvetica, .font-base, .text-box h1, .text-box p, .main .content .section p, .main .content .main p, .main {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -342,7 +342,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   border-bottom-left-radius: 6px;
 }
 
-.corner-all, .banner .center .content img.banner, .main .content .section img, .main .content .main img, .container-setup {
+.corner-all, .banner .center .content, .banner .center .content img.banner, .main .content .section img, .main .content .main img, .container-setup {
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
   -o-border-radius: 6px;
@@ -1432,14 +1432,54 @@ div.ppt {
 .banner .center .content {
 @extent .box;
   width: 900px;
+  height: 600px;
   margin: 0 auto;
   padding: 0;
+  background: url(/images/banner-5.jpg) no-repeat;
+  border: 1px solid #dddddd;
 }
 .banner .center .content img.banner {
   width: 900px;
   height: 200px;
   margin: 0;
   padding: 0;
+}
+
+.text-box {
+  position: absolute;
+  width: 430px;
+  padding: 0 30px;
+  top: 30px;
+  right: 30px;
+  border-left: 4px solid #1a3c8b;
+}
+.text-box h1 {
+  margin: 0 0 10px 0;
+  padding: 0 0 0 6px;
+  color: #d4d4d4;
+  font-size: 22px;
+  font-weight: 200;
+  text-align: justify;
+  line-height: 1.4em;
+}
+.text-box p {
+  margin: 6px 0 10px 0;
+  padding: 0;
+  color: #d4d4d4;
+  font-size: 14px;
+  font-weight: 200;
+  text-align: justify;
+  line-height: 1.4em;
+}
+.text-box p:last-child {
+  margin-bottom: 0;
+}
+.text-box p a {
+  color: #1a3c8b;
+  text-decoration: none;
+}
+.text-box p a:hover {
+  color: #0a1735;
 }
 
 .body {

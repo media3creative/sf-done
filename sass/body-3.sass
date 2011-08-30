@@ -16,15 +16,18 @@
 	position: relative
 	width: 100%
 	margin: 0 auto
-	//background: $image-slider-bg
 	.center
 		@extend .center-container
 		padding: $v-gap 0 ($v-gap/2)
 		.content
 			@extent .box
+			@extend .corner-all
 			width: $inside-width
+			height: 600px
 			margin: 0 auto
 			padding: 0
+			background: url(/images/banner-5.jpg) no-repeat
+			border: 1px solid $line-color
 			img.banner
 				@extend .box
 				@extend .corner-all
@@ -32,6 +35,42 @@
 				height: $banner-height
 				margin: 0
 				padding: 0
+
+.text-box
+	@extend .box
+	position: absolute
+	width: 430px
+	padding: 0 30px
+	top: ($v-gap)
+	right: ($h-gap)
+	border-left: 4px solid $primary-light 
+	h1
+		@extend .font-base
+		@extend .box
+		margin: 0 0 ($v-gap/3) 0
+		padding: 0 0 0 $corner-radius
+		color: $section-text
+		font-size: 22px
+		font-weight: 200
+		text-align: justify
+		line-height: 1.4em
+	p
+		@extend .font-base
+		@extend .box
+		margin: $corner-radius 0 ($v-gap/3) 0
+		padding: 0
+		color: $section-text
+		font-size: 14px
+		font-weight: 200
+		text-align: justify
+		line-height: 1.4em
+		&:last-child
+			margin-bottom: 0
+		a
+			color: $primary-light
+			text-decoration: none
+			&:hover
+				color: $primary
 				
 
 

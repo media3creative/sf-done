@@ -375,7 +375,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   width: 500px;
   top: 100px;
   margin: 0;
-  padding: 12px;
+  padding: 12px 24px;
   background: url(/images/nav_bg2.png) repeat;
 }
 .caption h1, .image-slider .center .captionLeft h1, .image-slider .center .captionRight h1 {

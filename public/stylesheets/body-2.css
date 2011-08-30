@@ -421,7 +421,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 
 .subnav h1, .text h1, .img h1, .button h1, .form h1 {
   position: relative;
-  color: #0a1735;
+  color: #efefef;
   background: transparent;
   width: 220px;
   margin: 0 auto;

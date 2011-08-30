@@ -37,7 +37,7 @@
 				a.container
 					@extend .container-setup
 					margin: 0
-					//background: $accent-color url("/images/home_right.jpg") no-repeat
+					background: url("/images/home_right.jpg") no-repeat
 
 
 .container-setup
@@ -49,7 +49,7 @@
 	+float-left
 	width: (($inside-width - ($h-gap * 2)) / 3)
 	height: $option-height
-	background: $option-bg
+	//background: $option-bg
 	border: 1px solid $option-border
 	z-index: 20
 	h1
@@ -58,12 +58,11 @@
 		position: absolute
 		top: ($v-gap * 0.75)
 		left: ($h-gap * 0.75)
-		margin: 0 ($h-gap * 0.75) 0 0
+		margin: 0 ($h-gap * 1.5) 0 0
 		padding-right: 1em
 		color: $option-title
 		font-size: 24px
-		font-weight: 200
-		border-bottom: 2px solid $secondary
+		font-weight: 100
 	h3
 		@extend .box
 		@extend .font-base
@@ -77,13 +76,15 @@
 		line-height: 1.3em
 	p.link
 		@extend .box
-		@extend .corner-all
+		@extend .corner-right
 		@extend .font-base
 		position: absolute
 		bottom: ($v-gap * 0.5)
-		left: ($h-gap * 0.75)
+		left: 0
+		padding: 3px 1em 3px ($h-gap * 0.75)
 		display: inline
-		color: $option-link
+		color: $primary
+		background: $text-light
 		font-size: 11px
 		font-weight: 200
 		text-decoration: none
