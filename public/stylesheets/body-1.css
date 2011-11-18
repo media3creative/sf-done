@@ -1,4 +1,4 @@
-.font-helvetica, .font-base, .container-setup h1, .body .center .content .left a.container h1, .body .center .content .middle a.container h1, .body .center .content .right a.container h1, .container-setup h3, .body .center .content .left a.container h3, .body .center .content .middle a.container h3, .body .center .content .right a.container h3, .container-setup p.link, .body .center .content .left a.container p.link, .body .center .content .middle a.container p.link, .body .center .content .right a.container p.link, .container-setup, .body .center .content .left a.container, .body .center .content .middle a.container, .body .center .content .right a.container {
+.font-helvetica, .font-base, .main .content .section p, .main .content .main p, .container-setup h1, .body .center .content .left a.container h1, .body .center .content .middle a.container h1, .body .center .content .right a.container h1, .container-setup h3, .body .center .content .left a.container h3, .body .center .content .middle a.container h3, .body .center .content .right a.container h3, .container-setup p.link, .body .center .content .left a.container p.link, .body .center .content .middle a.container p.link, .body .center .content .right a.container p.link, .main, .container-setup, .body .center .content .left a.container, .body .center .content .middle a.container, .body .center .content .right a.container {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -18,11 +18,11 @@
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
 }
 
-.font-trajan {
+.font-trajan, .main .content .section h1, .main .content .main h1 {
   font-family: "Trajan Pro", "Trajan", "Georgia", "Times New Roman", times, serif;
 }
 
-.bg-gradient-primary {
+.bg-gradient-primary, .main .content .section img, .main .content .main img {
   /* For WebKit (Safari, Google Chrome etc) */
   background: -webkit-gradient(linear, left top, left bottom, from(#1a3c8b), to(#0a1735));
   /* For Mozilla/Gecko (Firefox etc) */
@@ -135,7 +135,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   border-bottom-left-radius: 6px;
 }
 
-.corner-all, .container-setup, .body .center .content .left a.container, .body .center .content .middle a.container, .body .center .content .right a.container {
+.corner-all, .main .content .section img, .main .content .main img, .container-setup, .body .center .content .left a.container, .body .center .content .middle a.container, .body .center .content .right a.container {
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
   -o-border-radius: 6px;
@@ -148,16 +148,16 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   border-bottom-left-radius: 6px;
 }
 
-.clearfix, .body, .body .center, .container-setup, .body .center .content .left a.container, .body .center .content .middle a.container, .body .center .content .right a.container {
+.clearfix, .body, .body .center, .main .content .section, .main .content .main, .container-setup, .body .center .content .left a.container, .body .center .content .middle a.container, .body .center .content .right a.container {
   zoom: 1;
 }
-.clearfix:before, .body:before, .body .center:before, .container-setup:before, .body .center .content .left a.container:before, .body .center .content .middle a.container:before, .body .center .content .right a.container:before {
+.clearfix:before, .body:before, .body .center:before, .main .content .section:before, .main .content .main:before, .container-setup:before, .body .center .content .left a.container:before, .body .center .content .middle a.container:before, .body .center .content .right a.container:before {
   content: "\0020";
   display: block;
   height: 0;
   overflow: hidden;
 }
-.clearfix:after, .body:after, .body .center:after, .container-setup:after, .body .center .content .left a.container:after, .body .center .content .middle a.container:after, .body .center .content .right a.container:after {
+.clearfix:after, .body:after, .body .center:after, .main .content .section:after, .main .content .main:after, .container-setup:after, .body .center .content .left a.container:after, .body .center .content .middle a.container:after, .body .center .content .right a.container:after {
   content: "\0020";
   display: block;
   height: 0;
@@ -174,7 +174,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   background: transparent;
 }
 
-.box, .center-container, .body .center, .body, .container-setup, .body .center .content .left a.container, .body .center .content .middle a.container, .body .center .content .right a.container, .container-setup h1, .body .center .content .left a.container h1, .body .center .content .middle a.container h1, .body .center .content .right a.container h1, .container-setup h3, .body .center .content .left a.container h3, .body .center .content .middle a.container h3, .body .center .content .right a.container h3, .container-setup p.link, .body .center .content .left a.container p.link, .body .center .content .middle a.container p.link, .body .center .content .right a.container p.link {
+.box, .center-container, .body .center, .body, .main, .main .content, .main .content .section, .main .content .main, .main .content .section img, .main .content .main img, .main .content .section h1, .main .content .main h1, .main .content .section p, .main .content .main p, .container-setup, .body .center .content .left a.container, .body .center .content .middle a.container, .body .center .content .right a.container, .container-setup h1, .body .center .content .left a.container h1, .body .center .content .middle a.container h1, .body .center .content .right a.container h1, .container-setup h3, .body .center .content .left a.container h3, .body .center .content .middle a.container h3, .body .center .content .right a.container h3, .container-setup p.link, .body .center .content .left a.container p.link, .body .center .content .middle a.container p.link, .body .center .content .right a.container p.link {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -205,7 +205,7 @@ b {
   font-weight: bold;
 }
 
-.font-helvetica, .font-base, .container-setup h1, .body .center .content .left a.container h1, .body .center .content .middle a.container h1, .body .center .content .right a.container h1, .container-setup h3, .body .center .content .left a.container h3, .body .center .content .middle a.container h3, .body .center .content .right a.container h3, .container-setup p.link, .body .center .content .left a.container p.link, .body .center .content .middle a.container p.link, .body .center .content .right a.container p.link, .container-setup, .body .center .content .left a.container, .body .center .content .middle a.container, .body .center .content .right a.container {
+.font-helvetica, .font-base, .main .content .section p, .main .content .main p, .container-setup h1, .body .center .content .left a.container h1, .body .center .content .middle a.container h1, .body .center .content .right a.container h1, .container-setup h3, .body .center .content .left a.container h3, .body .center .content .middle a.container h3, .body .center .content .right a.container h3, .container-setup p.link, .body .center .content .left a.container p.link, .body .center .content .middle a.container p.link, .body .center .content .right a.container p.link, .main, .container-setup, .body .center .content .left a.container, .body .center .content .middle a.container, .body .center .content .right a.container {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -225,11 +225,11 @@ b {
   font-family: "Trebuchet MS", "Trebuchet", "Times New Roman";
 }
 
-.font-trajan {
+.font-trajan, .main .content .section h1, .main .content .main h1 {
   font-family: "Trajan Pro", "Trajan", "Georgia", "Times New Roman", times, serif;
 }
 
-.bg-gradient-primary {
+.bg-gradient-primary, .main .content .section img, .main .content .main img {
   /* For WebKit (Safari, Google Chrome etc) */
   background: -webkit-gradient(linear, left top, left bottom, from(#1a3c8b), to(#0a1735));
   /* For Mozilla/Gecko (Firefox etc) */
@@ -342,7 +342,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   border-bottom-left-radius: 6px;
 }
 
-.corner-all, .container-setup, .body .center .content .left a.container, .body .center .content .middle a.container, .body .center .content .right a.container {
+.corner-all, .main .content .section img, .main .content .main img, .container-setup, .body .center .content .left a.container, .body .center .content .middle a.container, .body .center .content .right a.container {
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
   -o-border-radius: 6px;
@@ -378,6 +378,62 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 .body .center .content .right a.container {
   margin: 0;
   background: url("/images/home_right.jpg") no-repeat;
+}
+
+.main {
+  position: relative;
+  display: inline;
+  float: left;
+  width: 900px;
+}
+.main .content {
+  position: relative;
+  width: 900px !important;
+}
+.main .content .section, .main .content .main {
+  position: relative;
+  padding: 0 0 30px 0;
+  background: white;
+}
+.main .content .section img, .main .content .main img {
+  display: inline;
+  float: right;
+  clear: none;
+  width: 200px;
+  height: 300px;
+  margin: 0 0 15px 15px;
+  z-index: 100;
+}
+.main .content .section h1, .main .content .main h1 {
+  width: 685px;
+  margin: 6px 215px 15px 0;
+  padding: 0 0 0.2em 6px;
+  color: #0a1735;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+  letter-spacing: -0.05em;
+  border-bottom: 1px solid #dddddd;
+}
+.main .content .section p, .main .content .main p {
+  width: 900px;
+  margin: 6px 0 10px 0;
+  padding: 0 0 0 6px;
+  color: #0a1735;
+  font-size: 14px;
+  font-weight: 200;
+  text-align: justify;
+  line-height: 1.4em;
+}
+.main .content .section p:last-child, .main .content .main p:last-child {
+  margin-bottom: 0;
+}
+.main .content .section p a, .main .content .main p a {
+  color: #1a3c8b;
+  text-decoration: none;
+}
+.main .content .section p a:hover, .main .content .main p a:hover {
+  color: #0a1735;
 }
 
 .container-setup, .body .center .content .left a.container, .body .center .content .middle a.container, .body .center .content .right a.container {

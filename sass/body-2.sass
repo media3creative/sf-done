@@ -25,20 +25,12 @@
 			padding: 0
 			img.banner
 				@extend .box
-				@extend .corner-top-left
+				@extend .corner-all
 				width: $inside-width
 				height: $banner-height
 				margin: 0
 				padding: 0
-				border-top: 4px solid $primary-light
-#banner-bottom
-	position: relative
-	top: -2px
-	width: $inside-width
-	height: 25px
-	margin: 0 auto
-	background: url(/images/stripe.jpg) repeat
-			
+				border: 1px solid $option-border
 
 
 
@@ -83,7 +75,7 @@
 		@extend .corner-top
 		@extend .font-trajan
 		position: relative
-		color: $option-title
+		color: $primary
 		background: $option-title-bg
 		width: ($option-width - ($h-gap *2))
 		margin: 0 auto
@@ -163,6 +155,9 @@
 		line-height: 1.2em
 		&:last-child
 			margin-bottom: ($v-gap / 2)
+		a:hover
+			text-decoration: none
+			color: $primary-light
 
 // Button-style sidebar box
 .button
@@ -250,19 +245,19 @@
 				width: ($content-width - ($content-img-w + ($h-gap / 2)))
 				margin: $corner-radius ($content-img-w + ($h-gap / 2)) ($v-gap/2) 0
 				padding: 0 0 0.2em $corner-radius
-				color: $section-title !important
-				font-size: 30px
+				color: $primary
+				font-size: 24px
 				font-weight: bold
 				text-align: left
 				letter-spacing: -0.05em
-				border-bottom: 1px solid $section-lines
+				border-bottom: 1px solid $option-border
 			p
 				@extend .font-base
 				@extend .box
 				width: ($content-width)
 				margin: $corner-radius 0 ($v-gap/3) 0
 				padding: 0 0 0 $corner-radius
-				color: $section-text
+				color: $primary
 				font-size: 14px
 				font-weight: 200
 				text-align: justify

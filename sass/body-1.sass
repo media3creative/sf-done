@@ -39,6 +39,63 @@
 					margin: 0
 					background: url("/images/home_right.jpg") no-repeat
 
+.main
+	@extend .section
+	@extend .box
+	@extend .font-helvetica
+	position: relative
+	+float-left
+	width: $inside-width
+	.content
+		@extend .box
+		position: relative
+		width: $inside-width !important
+		.section
+			@extend .box
+			@extend .clearfix
+			position: relative
+			padding: 0 0 ($v-gap) 0
+			background: #fff
+			img
+				@extend .box
+				@extend .corner-all
+				@extend .bg-gradient-primary
+				+float-right
+				clear: none
+				width: $content-img-w
+				height: $content-img-h
+				margin: 0 0 ($v-gap / 2) ($h-gap / 2)
+				z-index: 100
+			h1
+				@extend .font-trajan
+				@extend .box
+				width: ($inside-width - ($content-img-w + ($h-gap / 2)))
+				margin: $corner-radius ($content-img-w + ($h-gap / 2)) ($v-gap/2) 0
+				padding: 0 0 0.2em $corner-radius
+				color: $primary
+				font-size: 24px
+				font-weight: bold
+				text-align: left
+				letter-spacing: -0.05em
+				border-bottom: 1px solid $option-border
+			p
+				@extend .font-base
+				@extend .box
+				width: ($inside-width)
+				margin: $corner-radius 0 ($v-gap/3) 0
+				padding: 0 0 0 $corner-radius
+				color: $primary
+				font-size: 14px
+				font-weight: 200
+				text-align: justify
+				line-height: 1.4em
+				&:last-child
+					margin-bottom: 0
+				a
+					color: $primary-light
+					text-decoration: none
+					&:hover
+						color: $primary
 
 .container-setup
 	@extend .box

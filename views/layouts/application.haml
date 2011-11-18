@@ -1,30 +1,12 @@
 - @sitename = "Steadfast"
 
 // MAIN NAVIGATION
-- @link1 = ["Home", "/home"]
-- @link2 = ["Services", "/services"]
-- @link3 = ["Our Company", "/company"]
-- @link4 = ["News &amp; Press", "/newspress"]
-- @link5 = ["Contact", "/contact"]
+- @link1 = ["Our Company", "/home"]
+- @link3 = ["About", "/about"]
 
 // FOOTER LINKS
-- @linkA1 = ["713-224-2323 ", "ssss"]
-- @linkA2 = ["graberlaw@sbcglobal.net", "mailto:graberlaw@sbcglobal.net"]
-- @linkA3 = ["link name", "/path"]
-- @linkA4 = ["link name", "/path"]
-- @linkA5 = ["link name", "/path"]
+- @linkA2 = ["info@steadfastmed.com", "mailto:info@steadfastmed.com"]
 
-- @linkB1 = ["Terms of Service", "/legal#terms"]
-- @linkB2 = ["Privacy Policy", "/legal#privacy"]
-- @linkB3 = ["link name", "/path"]
-- @linkB4 = ["link name", "/path"]
-- @linkB5 = ["link name", "/path"]
-
-- @linkC1 = ["link name", "/path"]
-- @linkC2 = ["link name", "/path"]
-- @linkC3 = ["link name", "/path"]
-- @linkC4 = ["link name", "/path"]
-- @linkC5 = ["link name", "/path"]
 
 !!! 5
 %html
@@ -82,7 +64,7 @@
                   animSpeed: 600, // Slide transition speed
                   pauseTime: 6000, // How long each slide will show
                   startSlide: 0, // Set starting Slide (0 index)
-                  directionNav: true, // Next & Prev navigation
+                  directionNav: false, // Next & Prev navigation
                   directionNavHide: true, // Only show on hover
                   controlNav: true, // 1,2,3... navigation
                   controlNavThumbs: false, // Use thumbnails for Control Nav
@@ -91,7 +73,7 @@
                   controlNavThumbsReplace: '_thumb.jpg', // ...this in thumb Image src
                   keyboardNav: true, // Use left & right arrows
                   pauseOnHover: true, // Stop animation while hovering
-                  manualAdvance: false, // Force manual transitions
+                  manualAdvance: true, // Force manual transitions
                   captionOpacity: 1.0, // Universal caption opacity
                   prevText: 'Back', // Prev directionNav text
                   nextText: 'Next', // Next directionNav text
@@ -185,25 +167,6 @@
           %li
             %a#three.topnav{:href => @link3[1]}
               =@link3[0]
-          %li
-            %a#two.topnav{:href => @link2[1]}
-              =@link2[0]
-            .sub
-              %ul
-                / / %li
-                / /   %h2 Header
-                / %li
-                /   %a{:href => "#"} Navigation Link
-                / %li
-                /   %a{:href => "#"} Navigation Link
-                / %li
-                /   %a{:href => "#"} Navigation Link
-          %li
-            %a#four.topnav{:href => @link4[1]}
-              =@link4[0]
-          %li
-            %a#five.topnav{:href => @link5[1]}
-              =@link5[0]
 
     .content
       = yield
@@ -216,15 +179,12 @@
                 %img{:src => "/images/logo-sm.png", :alt => @sitename+" Logo"}
             .row
               %p
-                %a{:href => @linkB1[1]}
-                  =@linkB1[0]
+                %a{:href => @link1[1]}
+                  =@link1[0]
                 =" | "
-                %a{:href => @linkB2[1]}
-                  =@linkB2[0]
-            .row
-              %p
-                =@linkA1[0]
-                =" - "
+                %a{:href => @link3[1]}
+                  =@link3[0]
+                =" | "
                 %a{:href => @linkA2[1]}
                   =@linkA2[0]
               

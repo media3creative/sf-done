@@ -63,7 +63,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   background: #b4d5ff;
 }
 
-.corner-top-left, .banner .center .content img.banner {
+.corner-top-left {
   -moz-border-radius-topleft: 6px;
   -khtml-border-radius-topleft: 6px;
   -webkit-border-top-left-radius: 6px;
@@ -135,7 +135,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   border-bottom-left-radius: 6px;
 }
 
-.corner-all, .link h5, .button p.link, .main .content .section img, .main .content .main img, .container-setup, .subnav, .text, .img, .button, .form {
+.corner-all, .banner .center .content img.banner, .link h5, .button p.link, .main .content .section img, .main .content .main img, .container-setup, .subnav, .text, .img, .button, .form {
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
   -o-border-radius: 6px;
@@ -270,7 +270,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   background: #b4d5ff;
 }
 
-.corner-top-left, .banner .center .content img.banner {
+.corner-top-left {
   -moz-border-radius-topleft: 6px;
   -khtml-border-radius-topleft: 6px;
   -webkit-border-top-left-radius: 6px;
@@ -342,7 +342,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   border-bottom-left-radius: 6px;
 }
 
-.corner-all, .link h5, .button p.link, .main .content .section img, .main .content .main img, .container-setup, .subnav, .text, .img, .button, .form {
+.corner-all, .banner .center .content img.banner, .link h5, .button p.link, .main .content .section img, .main .content .main img, .container-setup, .subnav, .text, .img, .button, .form {
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
   -o-border-radius: 6px;
@@ -371,19 +371,10 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 }
 .banner .center .content img.banner {
   width: 900px;
-  height: 200px;
+  height: 275px;
   margin: 0;
   padding: 0;
-  border-top: 4px solid #1a3c8b;
-}
-
-#banner-bottom {
-  position: relative;
-  top: -2px;
-  width: 900px;
-  height: 25px;
-  margin: 0 auto;
-  background: url(/images/stripe.jpg) repeat;
+  border: 1px solid #dddddd;
 }
 
 .body {
@@ -421,7 +412,7 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 
 .subnav h1, .text h1, .img h1, .button h1, .form h1 {
   position: relative;
-  color: #efefef;
+  color: #0a1735;
   background: transparent;
   width: 220px;
   margin: 0 auto;
@@ -501,6 +492,10 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
 .text p:last-child, .img p:last-child {
   margin-bottom: 15px;
 }
+.text p a:hover, .img p a:hover {
+  text-decoration: none;
+  color: #1a3c8b;
+}
 
 .button p.link {
   position: relative;
@@ -574,18 +569,18 @@ h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, 
   width: 369px;
   margin: 6px 215px 15px 0;
   padding: 0 0 0.2em 6px;
-  color: #d4d4d4 !important;
-  font-size: 30px;
+  color: #0a1735;
+  font-size: 24px;
   font-weight: bold;
   text-align: left;
   letter-spacing: -0.05em;
-  border-bottom: 1px solid #3d455d;
+  border-bottom: 1px solid #dddddd;
 }
 .main .content .section p, .main .content .main p {
   width: 584px;
   margin: 6px 0 10px 0;
   padding: 0 0 0 6px;
-  color: #d4d4d4;
+  color: #0a1735;
   font-size: 14px;
   font-weight: 200;
   text-align: justify;
